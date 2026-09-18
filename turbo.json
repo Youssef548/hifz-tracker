@@ -4,7 +4,7 @@
     "build": { "dependsOn": ["^build"], "outputs": [".next/**", "!.next/cache/**", "dist/**"] },
     "dev": { "dependsOn": ["^build"], "cache": false, "persistent": true },
     "lint": {},
-    "test": { "dependsOn": ["^build"] },
+    "test": { "dependsOn": ["^build"], "env": ["DATABASE_URL", "JWT_ACCESS_SECRET"] },
     "typecheck": { "dependsOn": ["^build", "build"] }
   }
 }
