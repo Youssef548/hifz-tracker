@@ -128,7 +128,7 @@ class ReviewsApi {
   /// Returns a [Future] containing a [Response] with a [ReviewListResponseOutput] as data
   /// Throws [DioException] if API call or serialization fails
   Future<Response<ReviewListResponseOutput>> reviewsControllerList({
-    required String studentId,
+    String? studentId,
     CancelToken? cancelToken,
     Map<String, dynamic>? headers,
     Map<String, dynamic>? extra,
@@ -150,8 +150,9 @@ class ReviewsApi {
     );
 
     final _queryParameters = <String, dynamic>{
-      r'studentId':
-          encodeQueryParameter(_serializers, studentId, const FullType(String)),
+      if (studentId != null)
+        r'studentId': encodeQueryParameter(
+            _serializers, studentId, const FullType(String)),
     };
 
     final _response = await _dio.request<Object>(

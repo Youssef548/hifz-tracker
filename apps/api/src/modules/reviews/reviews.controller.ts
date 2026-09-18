@@ -12,7 +12,7 @@ import {
   Res,
   UseGuards,
 } from '@nestjs/common';
-import { ApiOkResponse } from '@nestjs/swagger';
+import { ApiOkResponse, ApiQuery } from '@nestjs/swagger';
 import { createZodDto, ZodResponse } from 'nestjs-zod';
 import type { Response } from 'express';
 import {
@@ -55,6 +55,9 @@ export class ReviewsController {
 
   @Get()
   @HttpCode(HttpStatus.OK)
+  // Nest cannot see the `?` on an optional query param at runtime, so without
+  // this the document claims `studentId` is required.
+  @ApiQuery({ name: 'studentId', required: false, type: String })
   @ZodResponse({ status: HttpStatus.OK, type: ReviewListResponseDto })
   list(
     @Request() req: { user: { id: string; role: string } },

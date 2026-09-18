@@ -78,7 +78,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **studentId** | **String**|  | 
+ **studentId** | **String**|  | [optional] 
 
 ### Return type
 

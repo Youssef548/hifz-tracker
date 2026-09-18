@@ -110,12 +110,7 @@ export function createApiClient(opts: ApiClientOptions): ApiClient {
         ),
       list: (studentId) =>
         parse(
-          client.GET('/api/v1/reviews', {
-            // The document marks `studentId` required even though the endpoint
-            // treats it as optional, so the empty case is built explicitly
-            // rather than relying on the serializer to drop `undefined`.
-            params: { query: (studentId === undefined ? {} : { studentId }) as { studentId: string } },
-          }),
+          client.GET('/api/v1/reviews', { params: { query: { studentId } } }),
           ReviewListResponseSchema,
         ),
     },

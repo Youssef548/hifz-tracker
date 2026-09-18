@@ -294,8 +294,8 @@ export interface operations {
     };
     ReviewsController_list: {
         parameters: {
-            query: {
-                studentId: string;
+            query?: {
+                studentId?: string;
             };
             header?: never;
             path?: never;
