@@ -29,6 +29,9 @@ boundaries enforced by tooling, not convention.
 | D6 | Database | PostgreSQL + Prisma | TypeORM; MongoDB/Mongoose | Domain is relational; typed client + schema-as-code |
 | D7 | Mobile state / local store | Riverpod + drift (SQLite) | Bloc; Isar | Riverpod DI fits layered packages; drift gives SQL for cache + outbox |
 | D8 | Auth (day 1) | Email/password + JWT access + rotating refresh; roles `student\|teacher\|admin` | Social login immediately | Retrofitting identity is the classic monorepo killer; password-only avoids Apple's "social login ⇒ Sign in with Apple" requirement until we choose to add it |
+| D9 | Hosting | VPS + Docker Compose | Managed platforms (Vercel + managed Postgres) | Confirmed during review — matches team background; deployment-only concern, no architectural impact |
+| D10 | Desktop | Installable **PWA** (the dashboard web app) | Electron desktop app | Dashboard + browser already covers desktop; Electron adds packaging/maintenance for near-zero day-1 value. Boundary rules allow adding an `apps/desktop` later without rework |
+| D11 | UI language | **Mobile: Arabic-first, RTL.** Web: English-only. Content (Quran text, surah names): Arabic everywhere | English UI everywhere | Students (mobile) are Arabic-speaking; teachers' dashboard stays English for now. Flutter l10n + RTL from the scaffold stage — retrofitting RTL is expensive. Web can add locale routing later without structural change |
 
 ## 3. Topology
 
@@ -68,8 +71,9 @@ One schema system, three consumers; generation happens **only** across the langu
 2. **Flutter client generation.** Nest serves the OpenAPI spec at `/docs-json`;
    `pnpm gen:dart` runs `openapi-generator-cli` (dart-dio) into `dart-packages/api_client`.
    CI regenerates and fails on `git diff --exit-code` — the client can never drift from the API.
-3. **Quran metadata.** Surah list, ayah counts, Juz/Hizb divisions live as one JSON file in
-   `contracts`; a small script generates the Dart constants file from it. Single data source.
+3. **Quran metadata.** Surah list (Arabic + transliterated names), ayah counts, Juz/Hizb
+   divisions live as one JSON file in `contracts`; a small script generates the Dart constants
+   file from it. Single data source; Arabic content is served identically on every surface.
 
 ## 5. Dependency rules (enforced, not conventional)
 
@@ -107,6 +111,10 @@ One schema system, three consumers; generation happens **only** across the langu
   two-device edits resolve last-write-wins, accepted for this product.
 - **`apps/mobile` is a thin shell.** App skeleton, routing, DI composition. Logic growing in
   the shell is a smell: it belongs in `features/*`.
+- **Arabic-first, RTL (D11):** scaffolded from day 1 — `flutter_localizations` + `gen-l10n`
+  (arb files), Arabic locale as default with `Directionality.rtl` through Material, Arabic UI
+  font and a proper mushaf font for Quran text (font selection itself is feature work).
+  Localization assets live with the feature packages that use them.
 
 ## 8. Web design (apps/web)
 
@@ -117,6 +125,9 @@ One schema system, three consumers; generation happens **only** across the langu
 - Middleware guards `(dash)` by session and role; teachers only.
 - Design system in `packages/ui` (Tailwind + shadcn/ui). No page-level components in the
   package — only primitives and composed components.
+- **Desktop story = PWA (D10):** the dashboard is installable — web app manifest + service
+  worker (Serwist) for an offline app shell. English-only day 1; Next.js locale routing can
+  be added later without structural change. Electron is a non-goal until proven otherwise.
 
 ## 9. Error handling
 
@@ -144,10 +155,11 @@ One schema system, three consumers; generation happens **only** across the langu
 
 Prove every boundary with one vertical slice before any feature work:
 
-1. Repo scaffolded: pnpm + Turborepo + Melos + docker-compose; all three apps boot.
+1. Repo scaffolded: pnpm + Turborepo + Melos + docker-compose; all three apps boot; mobile
+   bootstrapped with Arabic locale + RTL + l10n pipeline (never retrofit).
 2. Auth end-to-end: register / login / refresh, role guard.
-3. A student logs a review **from the mobile app** — through the outbox, offline-capable —
-   and it **appears on the teacher dashboard**.
+3. A student logs a review **from the mobile app** — through the outbox, offline-capable, in
+   the Arabic RTL UI — and it **appears on the teacher dashboard**.
 4. `pnpm gen:dart` wired and CI drift-check green.
 
 Every subsequent feature (assignments, spaced-review scheduling, progress analytics,
@@ -158,12 +170,9 @@ notifications) gets its own spec → plan → implement cycle on this skeleton.
 - No shared UI between Flutter and web (different platforms; forced sharing ages badly).
 - No microservices, no GraphQL, no feature-flag system, no analytics, no billing.
 - No full offline-first sync engine (queued writes only, by design).
-- No i18n infrastructure day 1. Day-1 UI language: **English**, with Arabic *content*
-  (Quran text) rendered correctly. Full Arabic/RTL UI is a later increment.
+- No Electron desktop app — desktop is the installable PWA dashboard (D10).
+- Web i18n deferred: English-only day 1; mobile is Arabic-first RTL from day 1 (D11).
 
-## 13. Open questions (do not block implementation)
+## 13. Open questions
 
-1. **Hosting:** assumed VPS + Docker Compose (team background). Managed platforms (e.g.,
-   Vercel + managed Postgres) would change only deployment, not architecture.
-2. **Arabic-first UI?** If the day-1 audience is Arabic-speaking, flip the §12 UI-language
-   decision to Arabic/RTL **before** the design system is built — cheaper now than retrofitting.
+Both review questions are resolved (§2: D9 hosting, D11 UI language). None currently open.
