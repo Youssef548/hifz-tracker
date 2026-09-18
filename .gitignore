@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.next/
+.turbo/
+coverage/
+generated/
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+apps/mobile/.dart_tool/
+apps/mobile/build/
+.dart_tool/
+melos_staging/
