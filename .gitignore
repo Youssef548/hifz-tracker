@@ -11,9 +11,11 @@ generated/
 apps/mobile/.dart_tool/
 apps/mobile/build/
 .dart_tool/
+build/
 melos_staging/
 .idea/
 *.iml
+pubspec_overrides.yaml
 dart-packages/**/pubspec.lock
 dart-packages/**/pubspec_overrides.yaml
 dart-packages/**/*.iml
