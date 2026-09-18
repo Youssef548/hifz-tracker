@@ -18,6 +18,11 @@ export function defineConfig({ type }) {
     settings: {
       'boundaries/include': ['apps/**', 'packages/**'],
       'boundaries/elements': elements,
+      // Without an import resolver, eslint-module-utils falls back to the node
+      // resolver without .ts/.tsx extensions, so extensionless relative
+      // imports of TS files come back unresolved and boundaries silently
+      // skips element-types checks on them.
+      'import/resolver': { node: { extensions: ['.js', '.ts', '.tsx'] } },
     },
     rules: {
       'boundaries/element-types': ['error', { default: 'disallow', rules: [
