@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2620" height="1810" viewBox="0 0 2620 1810">
+  <defs>
+<marker id="ah-0" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto" markerUnits="strokeWidth"><path d="M 0 1.2 L 9 5 L 0 8.8 z" fill="#0F6E5C" /></marker>
+<marker id="ah-1" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto" markerUnits="strokeWidth"><path d="M 0 1.2 L 9 5 L 0 8.8 z" fill="#A9660A" /></marker>
+<marker id="ah-2" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto" markerUnits="strokeWidth"><path d="M 0 1.2 L 9 5 L 0 8.8 z" fill="#8A939C" /></marker>
+<marker id="ah-3" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto" markerUnits="strokeWidth"><path d="M 0 1.2 L 9 5 L 0 8.8 z" fill="#8A4B2A" /></marker>
+<marker id="ah-4" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto" markerUnits="strokeWidth"><path d="M 0 1.2 L 9 5 L 0 8.8 z" fill="#5F6A75" /></marker>
+<marker id="ah-5" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto" markerUnits="strokeWidth"><path d="M 0 1.2 L 9 5 L 0 8.8 z" fill="#55606B" /></marker>
+  </defs>
+  <rect width="2620" height="1810" fill="#FBF8F2" />
+<line x1="70" y1="154" x2="2550" y2="154" stroke="#DED7C9" stroke-width="2" stroke-linecap="round" />
+<line x1="190" y1="190" x2="190" y2="1670" stroke="#DED7C9" stroke-width="1.5" stroke-linecap="round" />
+<rect x="240" y="405" width="520" height="500" rx="14" fill="#FFFFFF" stroke="#0F6E5C" stroke-width="1.5" />
+<rect x="265" y="724" width="470" height="164" rx="12" fill="#FFFFFF" stroke="#0F6E5C" stroke-width="1.5" />
+<rect x="1420" y="405" width="520" height="500" rx="14" fill="#FFFFFF" stroke="#A9660A" stroke-width="1.5" />
+<rect x="640" y="1010" width="900" height="410" rx="14" fill="#FFFFFF" stroke="#2F4B7C" stroke-width="2" />
+<rect x="800" y="180" width="580" height="250" rx="14" fill="#FFFFFF" stroke="#DED7C9" stroke-width="1.5" />
+<rect x="800" y="180" width="580" height="40" rx="14" fill="#F4F5F6" stroke="none" />
+<rect x="800" y="210" width="580" height="10" rx="0" fill="#FFFFFF" stroke="none" />
+<rect x="800" y="470" width="580" height="435" rx="14" fill="#FFFFFF" stroke="#DED7C9" stroke-width="1.5" />
+<rect x="800" y="470" width="580" height="40" rx="14" fill="#FBF0DC" stroke="none" />
+<rect x="800" y="500" width="580" height="10" rx="0" fill="#FFFFFF" stroke="none" />
+<rect x="2000" y="180" width="560" height="540" rx="14" fill="#FFFFFF" stroke="#DED7C9" stroke-width="1.5" />
+<rect x="2000" y="180" width="560" height="40" rx="14" fill="#F4F5F6" stroke="none" />
+<rect x="2000" y="210" width="560" height="10" rx="0" fill="#FFFFFF" stroke="none" />
+<rect x="2000" y="760" width="560" height="280" rx="14" fill="#FFFFFF" stroke="#DED7C9" stroke-width="1.5" />
+<rect x="2000" y="760" width="560" height="40" rx="14" fill="#FBEAE7" stroke="none" />
+<rect x="2000" y="790" width="560" height="10" rx="0" fill="#FFFFFF" stroke="none" />
+<rect x="2000" y="1080" width="560" height="380" rx="14" fill="#FFFFFF" stroke="#DED7C9" stroke-width="1.5" />
+<rect x="2000" y="1080" width="560" height="40" rx="14" fill="#E6ECF7" stroke="none" />
+<rect x="2000" y="1110" width="560" height="10" rx="0" fill="#FFFFFF" stroke="none" />
+<rect x="2000" y="1500" width="560" height="250" rx="14" fill="#FFFFFF" stroke="#DED7C9" stroke-width="1.5" />
+<rect x="2000" y="1500" width="560" height="40" rx="14" fill="#E4F2EE" stroke="none" />
+<rect x="2000" y="1530" width="560" height="10" rx="0" fill="#FFFFFF" stroke="none" />
+<path d="M 500 345 L 500 401" fill="none" stroke="#0F6E5C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-0)" />
+<path d="M 1680 345 L 1680 401" fill="none" stroke="#A9660A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-1)" />
+<path d="M 500 905 L 500 955" fill="none" stroke="#8A939C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-2)" />
+<path d="M 1680 905 L 1680 955" fill="none" stroke="#8A939C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-2)" />
+<line x1="500" y1="955" x2="1680" y2="955" stroke="#8A939C" stroke-width="2" stroke-linecap="round" />
+<path d="M 1090 955 L 1090 1005" fill="none" stroke="#8A939C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-2)" />
+<path d="M 860 1420 L 860 1505" fill="none" stroke="#8A4B2A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-3)" />
+<path d="M 822 424 L 852 424" fill="none" stroke="#5F6A75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-4)" />
+<path d="M 1000 424 L 1030 424" fill="none" stroke="#55606B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 5" marker-end="url(#ah-5)" />
+<path d="M 976 791 L 1006 791" fill="none" stroke="#55606B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 5" marker-end="url(#ah-5)" />
+<path d="M 1164 791 L 1194 791" fill="none" stroke="#55606B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 5" marker-end="url(#ah-5)" />
+<path d="M 2280 278 L 2280 290" fill="none" stroke="#55606B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 5" marker-end="url(#ah-5)" />
+<path d="M 2280 322 L 2280 334" fill="none" stroke="#55606B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 5" marker-end="url(#ah-5)" />
+<path d="M 2280 458 L 2280 470" fill="none" stroke="#55606B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 5" marker-end="url(#ah-5)" />
+<line x1="2280" y1="512" x2="2280" y2="526" stroke="#55606B" stroke-width="2" stroke-dasharray="7 5" stroke-linecap="round" />
+<line x1="2150" y1="526" x2="2410" y2="526" stroke="#55606B" stroke-width="2" stroke-dasharray="7 5" stroke-linecap="round" />
+<path d="M 2150 526 L 2150 540" fill="none" stroke="#55606B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 5" marker-end="url(#ah-5)" />
+<path d="M 2410 526 L 2410 540" fill="none" stroke="#55606B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 5" marker-end="url(#ah-5)" />
+<path d="M 2150 572 L 2150 586" fill="none" stroke="#55606B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 5" marker-end="url(#ah-5)" />
+<path d="M 2410 572 L 2410 586" fill="none" stroke="#55606B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 5" marker-end="url(#ah-5)" />
+<rect x="240" y="195" width="520" height="150" rx="12" fill="#E4F2EE" stroke="#0F6E5C" stroke-width="1.5" />
+<rect x="1420" y="195" width="520" height="150" rx="12" fill="#FBF0DC" stroke="#A9660A" stroke-width="1.5" />
+<rect x="265" y="460" width="470" height="76" rx="12" fill="#E4F2EE" stroke="#0F6E5C" stroke-width="1.5" />
+<rect x="265" y="548" width="470" height="76" rx="12" fill="#EEF0F2" stroke="#55606B" stroke-width="1.5" stroke-dasharray="7 5" />
+<rect x="265" y="636" width="470" height="76" rx="12" fill="#E4F2EE" stroke="#0F6E5C" stroke-width="1.5" />
+<rect x="280" y="764" width="210" height="100" rx="12" fill="#E4F2EE" stroke="#0F6E5C" stroke-width="1.5" />
+<rect x="505" y="764" width="215" height="100" rx="12" fill="#E4F2EE" stroke="#0F6E5C" stroke-width="1.5" />
+<rect x="1445" y="460" width="470" height="76" rx="12" fill="#FBF0DC" stroke="#A9660A" stroke-width="1.5" />
+<rect x="1445" y="548" width="470" height="76" rx="12" fill="#FBF0DC" stroke="#A9660A" stroke-width="1.5" />
+<rect x="1445" y="636" width="470" height="76" rx="12" fill="#FBF0DC" stroke="#A9660A" stroke-width="1.5" />
+<rect x="1445" y="724" width="470" height="76" rx="12" fill="#FBF0DC" stroke="#A9660A" stroke-width="1.5" />
+<rect x="1445" y="812" width="470" height="76" rx="12" fill="#FBF0DC" stroke="#A9660A" stroke-width="1.5" />
+<rect x="670" y="1088" width="280" height="140" rx="12" fill="#E6ECF7" stroke="#2F4B7C" stroke-width="1.5" />
+<rect x="970" y="1088" width="280" height="140" rx="12" fill="#E6ECF7" stroke="#2F4B7C" stroke-width="1.5" />
+<rect x="1270" y="1088" width="240" height="140" rx="12" fill="#E6ECF7" stroke="#2F4B7C" stroke-width="1.5" />
+<rect x="670" y="1250" width="200" height="130" rx="12" fill="#EEF0F2" stroke="#55606B" stroke-width="1.5" />
+<rect x="890" y="1250" width="220" height="130" rx="12" fill="#EEF0F2" stroke="#55606B" stroke-width="1.5" />
+<rect x="1130" y="1250" width="200" height="130" rx="12" fill="#EEF0F2" stroke="#55606B" stroke-width="1.5" />
+<rect x="1350" y="1250" width="160" height="130" rx="12" fill="#EEF0F2" stroke="#55606B" stroke-width="1.5" />
+<rect x="640" y="1510" width="430" height="150" rx="12" fill="#F7E9E0" stroke="#8A4B2A" stroke-width="1.5" />
+<rect x="1110" y="1510" width="430" height="150" rx="12" fill="#EEF0F2" stroke="#55606B" stroke-width="1.5" stroke-dasharray="7 5" />
+<rect x="822" y="237" width="16" height="16" rx="4" fill="#E4F2EE" stroke="#0F6E5C" stroke-width="1.5" />
+<rect x="822" y="270" width="16" height="16" rx="4" fill="#FBF0DC" stroke="#A9660A" stroke-width="1.5" />
+<rect x="822" y="303" width="16" height="16" rx="4" fill="#E6ECF7" stroke="#2F4B7C" stroke-width="1.5" />
+<rect x="822" y="336" width="16" height="16" rx="4" fill="#F7E9E0" stroke="#8A4B2A" stroke-width="1.5" />
+<rect x="822" y="369" width="16" height="16" rx="4" fill="#EEF0F2" stroke="#55606B" stroke-width="1.5" stroke-dasharray="7 5" />
+<line x1="822" y1="412" x2="1358" y2="412" stroke="#DED7C9" stroke-width="1" stroke-linecap="round" />
+<rect x="822" y="768" width="150" height="46" rx="12" fill="#FBF0DC" stroke="#A9660A" stroke-width="1.5" />
+<rect x="1010" y="768" width="150" height="46" rx="12" fill="#EEF0F2" stroke="#55606B" stroke-width="1.5" />
+<rect x="1198" y="768" width="160" height="46" rx="12" fill="#EEF0F2" stroke="#55606B" stroke-width="1.5" />
+<rect x="2030" y="240" width="500" height="36" rx="12" fill="#FBF0DC" stroke="#A9660A" stroke-width="1.5" />
+<rect x="2090" y="292" width="380" height="28" rx="12" fill="#EEF0F2" stroke="#55606B" stroke-width="1.5" />
+<rect x="2030" y="336" width="500" height="36" rx="12" fill="#E4F2EE" stroke="#0F6E5C" stroke-width="1.5" />
+<line x1="2030" y1="400" x2="2530" y2="400" stroke="#DED7C9" stroke-width="1" stroke-linecap="round" />
+<rect x="2030" y="420" width="500" height="36" rx="12" fill="#E6ECF7" stroke="#2F4B7C" stroke-width="1.5" />
+<rect x="2030" y="472" width="500" height="40" rx="12" fill="#E6ECF7" stroke="#2F4B7C" stroke-width="1.5" />
+<rect x="2050" y="542" width="200" height="28" rx="12" fill="#EEF0F2" stroke="#55606B" stroke-width="1.5" />
+<rect x="2310" y="542" width="200" height="28" rx="12" fill="#EEF0F2" stroke="#55606B" stroke-width="1.5" />
+<rect x="2045" y="588" width="210" height="56" rx="12" fill="#EEF0F2" stroke="#55606B" stroke-width="1.5" stroke-dasharray="7 5" />
+<rect x="2305" y="588" width="210" height="56" rx="12" fill="#EEF0F2" stroke="#55606B" stroke-width="1.5" stroke-dasharray="7 5" />
+<line x1="2030" y1="1394" x2="2530" y2="1394" stroke="#DED7C9" stroke-width="1" stroke-linecap="round" />
+<rect x="2030" y="1548" width="76" height="26" rx="12" fill="#E4F2EE" stroke="#0F6E5C" stroke-width="1.5" />
+<rect x="2030" y="1606" width="76" height="26" rx="12" fill="#E4F2EE" stroke="#0F6E5C" stroke-width="1.5" />
+<rect x="2030" y="1664" width="76" height="26" rx="12" fill="#E4F2EE" stroke="#0F6E5C" stroke-width="1.5" />
+<text x="70" y="80" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="40" font-weight="600" fill="#23272E">Hifz Tracker</text>
+<text x="72" y="121.775" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16.5" font-weight="400" fill="#5F6A75">Quran memorization tracking on a student + teacher model. One NestJS API serves one Flutter app and one Next.js dashboard.</text>
+<text x="70" y="274.025" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#8A939C" letter-spacing="1.4">CLIENTS</text>
+<text x="70" y="659.025" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#8A939C" letter-spacing="1.4">SHARED PACKAGES</text>
+<text x="70" y="1219.025" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#8A939C" letter-spacing="1.4">API</text>
+<text x="70" y="1589.025" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#8A939C" letter-spacing="1.4">DATA</text>
+<text x="442.50030000000004" y="254.225" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" fill="#0A4F42">apps/mobile</text>
+<text x="398.11000000000007" y="271.425" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#5F6A75">Flutter · Riverpod · go_router · drift · dio</text>
+<text x="400.2950000000001" y="286.37500000000006" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#5F6A75">Arabic-first (ar) with RTL · online-first</text>
+<text x="379.19250000000005" y="301.3250000000001" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#5F6A75">thin shell: routing, DI wiring, composition only</text>
+<text x="1633.8794" y="254.225" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="600" fill="#7A4907">apps/web</text>
+<text x="1561.9755" y="271.425" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#5F6A75">Next.js 15.5 · React 19 · Tailwind 4 · Serwist</text>
+<text x="1581.6175" y="286.37500000000006" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#5F6A75">marketing landing + teacher dashboard</text>
+<text x="1601.34" y="301.3250000000001" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#5F6A75">English only · installable PWA</text>
+<text x="268" y="435.6" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#0A4F42">dart-packages/</text>
+<text x="268" y="456.025" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#8A939C">Dart · Melos-managed</text>
+<text x="281" y="495.775" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#0A4F42">core</text>
+<text x="281" y="511.775" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#5F6A75">env config · Result&lt;T, Failure&gt; · Quran constants</text>
+<text x="281" y="583.775" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#3C454E">api_client</text>
+<text x="281" y="599.775" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#5F6A75">GENERATED from OpenAPI, never hand-edited</text>
+<text x="281" y="671.775" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#0A4F42">data</text>
+<text x="281" y="687.775" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#5F6A75">repositories · drift cache · write outbox</text>
+<text x="283" y="748.2" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#8A939C">features/</text>
+<text x="370.47535" y="811.6" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="600" fill="#0A4F42">auth</text>
+<text x="359.2975" y="827.4499999999999" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#5F6A75">login flow</text>
+<text x="570.6936" y="804.125" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="600" fill="#0A4F42">hifz_logging</text>
+<text x="590.19" y="819.9749999999999" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#5F6A75">log + list</text>
+<text x="591.8575" y="834.925" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#5F6A75">reviews</text>
+<text x="1448" y="435.6" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#7A4907">packages/</text>
+<text x="1448" y="456.025" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#8A939C">TypeScript · pnpm workspace</text>
+<text x="1461" y="495.775" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#7A4907">contracts</text>
+<text x="1461" y="511.775" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#5F6A75">zod DTOs + Quran metadata</text>
+<text x="1461" y="583.775" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#7A4907">api-sdk</text>
+<text x="1461" y="599.775" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#5F6A75">openapi-fetch client + generated types</text>
+<text x="1461" y="671.775" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#7A4907">ui</text>
+<text x="1461" y="687.775" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#5F6A75">Tailwind 4 design system + tokens</text>
+<text x="1461" y="759.775" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#7A4907">config</text>
+<text x="1461" y="775.775" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#5F6A75">shared tsconfig presets</text>
+<text x="1461" y="847.775" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#7A4907">eslint-config</text>
+<text x="1461" y="863.775" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#5F6A75">import-boundary rules</text>
+<text x="963.1434399999999" y="936.2" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#5F6A75">REST  /api/v1  ·  JWT + Idempotency-Key</text>
+<text x="672" y="1041" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="20" font-weight="600" fill="#20344F">apps/api</text>
+<text x="672" y="1066.2" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#5F6A75">NestJS 11 · Prisma 6 · nestjs-zod (zod 4) · @nestjs/swagger · passport-jwt</text>
+<text x="767.6265" y="1140.825" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#20344F">AuthModule</text>
+<text x="749.5675" y="1156.825" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#5F6A75">auth.controller · service</text>
+<text x="739.7925" y="1171.7749999999999" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#5F6A75">token.service · jwt.strategy</text>
+<text x="757.675" y="1186.7249999999997" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#5F6A75">roles.guard + @Roles</text>
+<text x="1052.283" y="1140.825" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#20344F">ReviewsModule</text>
+<text x="1062.16" y="1156.825" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#5F6A75">controller · service</text>
+<text x="1044.68" y="1171.7749999999999" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#5F6A75">Idempotency-Key replay</text>
+<text x="1057.905" y="1186.7249999999997" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#5F6A75">writes Review rows</text>
+<text x="1341.028" y="1155.775" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#20344F">HealthModule</text>
+<text x="1337.813" y="1171.775" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#5F6A75">GET /api/v1/health</text>
+<text x="745.885" y="1312.425" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#3C454E">config/</text>
+<text x="734.0625" y="1328.1249999999998" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#5F6A75">env validation</text>
+<text x="977.0722" y="1312.425" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#3C454E">filters/</text>
+<text x="964.0625" y="1328.1249999999998" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#5F6A75">error envelope</text>
+<text x="1203.3622" y="1312.425" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#3C454E">prisma/</text>
+<text x="1186.1275" y="1328.1249999999998" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#5F6A75">module + service</text>
+<text x="1405.885" y="1304.95" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#3C454E">spec.ts</text>
+<text x="1405.2175" y="1320.6499999999999" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#5F6A75">OpenAPI</text>
+<text x="1412.635" y="1335.5999999999997" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#5F6A75">builder</text>
+<text x="793.44368" y="1568.525" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17" font-weight="600" fill="#63351D">PostgreSQL 16</text>
+<text x="793.337" y="1585.125" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#5F6A75">docker compose · :5432</text>
+<text x="792.2675" y="1600.0749999999998" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#5F6A75">User · Student · Teacher</text>
+<text x="835.22" y="1615.0249999999996" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#5F6A75">Review</text>
+<text x="1294.31194" y="1576" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="17" font-weight="600" fill="#3C454E">Redis 7</text>
+<text x="1260.945" y="1592.6" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#5F6A75">in compose, not yet used</text>
+<text x="1236.2775000000001" y="1607.5499999999997" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#5F6A75">reserved for BullMQ + notifications</text>
+<text x="818" y="204.025" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#55606B" letter-spacing="1.1">LEGEND</text>
+<text x="848" y="249.375" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#23272E">Flutter / Dart</text>
+<text x="848" y="282.375" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#23272E">TypeScript / Next.js</text>
+<text x="848" y="315.375" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#23272E">NestJS API</text>
+<text x="848" y="348.375" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#23272E">Data &amp; infrastructure</text>
+<text x="848" y="381.375" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#23272E">Generated, or not yet wired</text>
+<text x="862" y="428.025" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#5F6A75">runtime call</text>
+<text x="1040" y="428.025" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#5F6A75">codegen or unused</text>
+<text x="818" y="494.025" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#7A4907" letter-spacing="1.1">THE CONTRACT SEAM</text>
+<text x="822" y="528.375" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#23272E">packages/contracts is the source of truth. Every DTO is a zod schema with inferred TypeScript</text>
+<text x="822" y="546.5" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#23272E">types; the API validates with them and the web app imports the same schemas for form</text>
+<text x="822" y="564.625" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#23272E">validation.</text>
+<text x="822" y="593.75" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#23272E">OpenAPI is emitted from the controllers and then fanned out to both languages. pnpm gen:dart</text>
+<text x="822" y="611.875" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#23272E">writes the Dart client; pnpm gen:api-types writes the paths and components types that</text>
+<text x="822" y="630" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#23272E">openapi-fetch consumes in the web SDK.</text>
+<text x="822" y="659.125" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#23272E">Generated types give compile-time safety, the zod schemas stay the runtime guard, and</text>
+<text x="822" y="677.25" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#23272E">api-sdk/src/contract-check.ts asserts the two still agree so drift fails tsc.</text>
+<text x="822" y="706.375" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#23272E">Apps never import one another. Everything that crosses a boundary is HTTP under /api/v1.</text>
+<text x="871.0512" y="787.725" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#7A4907">contracts</text>
+<text x="862.96" y="802.8249999999999" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#5F6A75">zod schemas</text>
+<text x="1057.5884" y="787.725" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#3C454E">OpenAPI</text>
+<text x="1059.9875" y="802.8249999999999" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#5F6A75">document</text>
+<text x="1233.4164" y="787.725" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#3C454E">generated types</text>
+<text x="1233.0925" y="802.8249999999999" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#5F6A75">Dart + TypeScript</text>
+<text x="822" y="850.305" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#5F6A75" font-style="italic">Generated code is rewritten wholesale, so no hand edit survives. CI regenerates and fails on any diff.</text>
+<text x="2018" y="204.025" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#3C454E" letter-spacing="1.1">CODE GENERATION</text>
+<text x="2195.8625" y="262.375" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#7A4907">contracts/quran/surahs.json</text>
+<text x="2235.162" y="310.2" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#3C454E">pnpm gen:quran</text>
+<text x="2200.3675" y="358.375" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#0A4F42">Dart Surah constants (core)</text>
+<text x="2181.2875" y="442.375" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#20344F">apps/api controllers + nestjs-zod</text>
+<text x="2207.5861" y="496.55" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#20344F">generated/openapi.json</text>
+<text x="2111.66245" y="560.025" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#3C454E">pnpm gen:dart</text>
+<text x="2355.5107" y="560.025" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#3C454E">pnpm gen:api-types</text>
+<text x="2119.8218" y="613.075" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#3C454E">api_client</text>
+<text x="2109.98" y="628.4750000000001" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#5F6A75">dart-packages/</text>
+<text x="2372.2428" y="613.075" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#3C454E">schema.d.ts</text>
+<text x="2351.2925" y="628.4750000000001" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#5F6A75">api-sdk/src/generated</text>
+<text x="2030" y="676.305" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#5F6A75" font-style="italic">The CI job drift re-runs all three generators and fails on any committed difference.</text>
+<text x="2018" y="784.025" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#B23A2E" letter-spacing="1.1">DEPENDENCY RULES</text>
+<text x="2030" y="812.375" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#B23A2E">·</text>
+<text x="2046" y="812.375" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#23272E">apps/* never import each other. Cross-app traffic is the API.</text>
+<text x="2030" y="858.375" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#B23A2E">·</text>
+<text x="2046" y="858.375" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#23272E">packages/* never import from apps/*.</text>
+<text x="2030" y="904.375" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#B23A2E">·</text>
+<text x="2046" y="904.375" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#23272E">Every package exposes one public entry. Deep imports are forbidden.</text>
+<text x="2030" y="950.375" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#B23A2E">·</text>
+<text x="2046" y="950.375" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#23272E">ESLint boundaries and the shared tsconfig presets turn a violation into a build error.</text>
+<text x="2030" y="996.375" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="600" fill="#B23A2E">·</text>
+<text x="2046" y="996.375" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#23272E">turbo (TypeScript) and melos (Dart) order the task graph across both toolchains.</text>
+<text x="2018" y="1104.025" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#20344F" letter-spacing="1.1">KEY RUNTIME FLOWS</text>
+<text x="2030" y="1129.55" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#20344F">Auth</text>
+<text x="2046" y="1156.8400000000001" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#23272E">POST /auth/login returns an access + refresh JWT pair.</text>
+<text x="2046" y="1174.8400000000001" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#23272E">JwtStrategy guards routes; @Roles + RolesGuard enforce the role.</text>
+<text x="2046" y="1192.8400000000001" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#23272E">Roles are STUDENT | TEACHER | ADMIN.</text>
+<text x="2030" y="1228.55" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#20344F">Log a review · offline-first</text>
+<text x="2046" y="1255.8400000000001" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#23272E">Optimistic write; a client UUID travels as the Idempotency-Key.</text>
+<text x="2046" y="1273.8400000000001" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#23272E">A 4xx domain rejection is surfaced to the student and never queued.</text>
+<text x="2046" y="1291.8400000000001" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#23272E">A 5xx or network failure goes to the drift outbox and retries with the same key.</text>
+<text x="2030" y="1327.55" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#20344F">Teacher dashboard</text>
+<text x="2046" y="1354.8400000000001" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#23272E">Next.js session cookie → api-sdk → GET /api/v1/reviews.</text>
+<text x="2046" y="1372.8400000000001" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#23272E">A teacher sees what their students logged from the app.</text>
+<text x="2030" y="1426.305" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#5F6A75" font-style="italic">Deliberately absent: a full sync engine and conflict resolution. Concurrent edits resolve</text>
+<text x="2030" y="1442.98" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#5F6A75" font-style="italic">last-write-wins.</text>
+<text x="2018" y="1524.025" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#0A4F42" letter-spacing="1.1">CI · .GITHUB/WORKFLOWS/CI.YML</text>
+<text x="2062.7212" y="1565.2" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#0A4F42">js</text>
+<text x="2120" y="1564.8400000000001" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#23272E">Postgres 16 service · turbo run lint typecheck test build</text>
+<text x="2057.4424" y="1623.2" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#0A4F42">dart</text>
+<text x="2120" y="1622.8400000000001" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#23272E">melos bootstrap · melos run analyze · melos run test</text>
+<text x="2056.9972" y="1681.2" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#0A4F42">drift</text>
+<text x="2120" y="1680.8400000000001" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#23272E">regenerate every client, then git diff --exit-code</text>
+<rect x="1785.3600000000001" y="469" width="119.63999999999997" height="20" rx="10" fill="#FBEAE7" stroke="#B23A2E" stroke-width="1" />
+<text x="1795.3600000000001" y="482.5" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" font-weight="600" fill="#B23A2E">SOURCE OF TRUTH</text>
+</svg>
