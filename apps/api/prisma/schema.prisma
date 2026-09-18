@@ -1,0 +1,54 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  STUDENT
+  TEACHER
+  ADMIN
+}
+
+enum Quality {
+  GOOD
+  FAIR
+  POOR
+}
+
+model User {
+  id            String         @id @default(uuid())
+  email         String         @unique
+  passwordHash  String
+  name          String
+  role          Role           @default(STUDENT)
+  createdAt     DateTime       @default(now())
+  refreshTokens RefreshToken[]
+  reviewLogs    ReviewLog[]
+}
+
+model RefreshToken {
+  id        String   @id @default(uuid())
+  tokenHash String   @unique
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+}
+
+model ReviewLog {
+  id             String   @id @default(uuid())
+  studentId      String
+  student        User     @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  surahNumber    Int
+  ayahFrom       Int
+  ayahTo         Int
+  quality        Quality
+  loggedAt       DateTime @default(now())
+  idempotencyKey String   @unique
+
+  @@index([studentId, loggedAt(sort: Desc)])
+}

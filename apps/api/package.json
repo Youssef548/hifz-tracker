@@ -18,7 +18,9 @@
     "test:cov": "jest --coverage",
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "typecheck": "tsc --noEmit",
-    "spec": "tsx src/spec.ts"
+    "spec": "tsx src/spec.ts",
+    "db:migrate": "prisma migrate dev",
+    "db:deploy": "prisma migrate deploy"
   },
   "dependencies": {
     "@hifz/contracts": "workspace:*",
@@ -26,6 +28,7 @@
     "@nestjs/config": "^12.0.0",
     "@nestjs/core": "^11.0.1",
     "@nestjs/platform-express": "^11.0.1",
+    "@prisma/client": "^6",
     "nestjs-zod": "^5.5.0",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.1",
@@ -50,6 +53,7 @@
     "globals": "^17.0.0",
     "jest": "^30.0.0",
     "prettier": "^3.4.2",
+    "prisma": "^6",
     "source-map-support": "^0.5.21",
     "supertest": "^7.0.0",
     "ts-jest": "^29.2.5",
