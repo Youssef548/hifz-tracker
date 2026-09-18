@@ -2,9 +2,6 @@
   "extends": "@hifz/config/tsconfig/nest.json",
   "compilerOptions": {
     "baseUrl": ".",
-    "paths": {
-      "@hifz/*": ["../../packages/*/src/index.ts"]
-    },
     "outDir": "./dist",
     "sourceMap": true,
     "incremental": true,
