@@ -62,6 +62,8 @@ Then check <http://localhost:3001/api/v1/health> → `{"status":"ok"}` and <http
 
 For schema changes during development use `pnpm --filter api db:migrate` (creates a migration) rather than `db:deploy`.
 
+The `.env` files are gitignored, so a fresh `git worktree` needs its own `cp` steps before `api#test` will run — without them it fails with `JwtStrategy requires a secret or key`, which reads like a code bug but is pure setup.
+
 ### Mobile app
 
 ```bash
