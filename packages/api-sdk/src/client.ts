@@ -1,6 +1,7 @@
 import {
   AuthResponseSchema,
   AuthUserSchema,
+  ErrorCodes,
   ErrorEnvelopeSchema,
   ReviewDtoSchema,
   ReviewListResponseSchema,
@@ -74,7 +75,7 @@ export function createApiClient(opts: ApiClientOptions): ApiClient {
           envelope.data.error.details,
         );
       }
-      throw new ApiError(response.status, 'INTERNAL', `Unexpected response (${response.status})`);
+      throw new ApiError(response.status, ErrorCodes.INTERNAL, `Unexpected response (${response.status})`);
     },
   };
   client.use(middleware);

@@ -17,6 +17,8 @@ import 'package:hifz_api_client/src/model/date.dart';
 import 'package:hifz_api_client/src/model/auth_response_output.dart';
 import 'package:hifz_api_client/src/model/auth_user_output.dart';
 import 'package:hifz_api_client/src/model/create_review_request.dart';
+import 'package:hifz_api_client/src/model/error_envelope.dart';
+import 'package:hifz_api_client/src/model/error_envelope_error.dart';
 import 'package:hifz_api_client/src/model/login_request.dart';
 import 'package:hifz_api_client/src/model/refresh_request.dart';
 import 'package:hifz_api_client/src/model/register_request.dart';
@@ -33,6 +35,8 @@ part 'serializers.g.dart';
   AuthResponseOutput,
   AuthUserOutput,
   CreateReviewRequest,
+  ErrorEnvelope,
+  ErrorEnvelopeError,
   LoginRequest,
   RefreshRequest,
   RegisterRequest,

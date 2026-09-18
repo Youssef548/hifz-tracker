@@ -4,6 +4,8 @@ doc/AuthApi.md
 doc/AuthResponseOutput.md
 doc/AuthUserOutput.md
 doc/CreateReviewRequest.md
+doc/ErrorEnvelope.md
+doc/ErrorEnvelopeError.md
 doc/HealthApi.md
 doc/LoginRequest.md
 doc/RefreshRequest.md
@@ -31,6 +33,8 @@ lib/src/model/auth_response_output.dart
 lib/src/model/auth_user_output.dart
 lib/src/model/create_review_request.dart
 lib/src/model/date.dart
+lib/src/model/error_envelope.dart
+lib/src/model/error_envelope_error.dart
 lib/src/model/login_request.dart
 lib/src/model/refresh_request.dart
 lib/src/model/register_request.dart

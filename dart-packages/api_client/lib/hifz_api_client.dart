@@ -17,6 +17,8 @@ export 'package:hifz_api_client/src/api/reviews_api.dart';
 export 'package:hifz_api_client/src/model/auth_response_output.dart';
 export 'package:hifz_api_client/src/model/auth_user_output.dart';
 export 'package:hifz_api_client/src/model/create_review_request.dart';
+export 'package:hifz_api_client/src/model/error_envelope.dart';
+export 'package:hifz_api_client/src/model/error_envelope_error.dart';
 export 'package:hifz_api_client/src/model/login_request.dart';
 export 'package:hifz_api_client/src/model/refresh_request.dart';
 export 'package:hifz_api_client/src/model/register_request.dart';

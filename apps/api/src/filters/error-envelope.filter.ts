@@ -8,6 +8,7 @@ import {
 } from '@nestjs/common';
 import { ZodValidationException } from 'nestjs-zod';
 import type { Response } from 'express';
+import { ErrorCodes, type ErrorCode } from '@hifz/contracts';
 
 @Catch()
 export class ErrorEnvelopeFilter implements ExceptionFilter {
@@ -24,14 +25,14 @@ export class ErrorEnvelopeFilter implements ExceptionFilter {
 
   private map(exception: unknown): {
     status: number;
-    code: string;
+    code: ErrorCode;
     message: string;
     details?: unknown;
   } {
     if (exception instanceof ZodValidationException) {
       return {
         status: HttpStatus.BAD_REQUEST,
-        code: 'VALIDATION_ERROR',
+        code: ErrorCodes.VALIDATION_ERROR,
         message: 'Request validation failed',
         details: (exception.getZodError() as { issues?: unknown }).issues,
       };
@@ -46,29 +47,31 @@ export class ErrorEnvelopeFilter implements ExceptionFilter {
     }
     return {
       status: HttpStatus.INTERNAL_SERVER_ERROR,
-      code: 'INTERNAL',
+      code: ErrorCodes.INTERNAL,
       message: 'Internal server error',
     };
   }
 
-  private codeFor(exception: HttpException): string {
+  private codeFor(exception: HttpException): ErrorCode {
     const status = exception.getStatus();
     if (status === HttpStatus.UNAUTHORIZED) {
       const body = exception.getResponse();
       const message = typeof body === 'string' ? body : ((body as { message?: string }).message ?? '');
-      return message.toLowerCase().includes('credentials') ? 'INVALID_CREDENTIALS' : 'UNAUTHORIZED';
+      return message.toLowerCase().includes('credentials')
+        ? ErrorCodes.INVALID_CREDENTIALS
+        : ErrorCodes.UNAUTHORIZED;
     }
     switch (status) {
       case HttpStatus.BAD_REQUEST:
-        return 'VALIDATION_ERROR';
+        return ErrorCodes.VALIDATION_ERROR;
       case HttpStatus.FORBIDDEN:
-        return 'FORBIDDEN';
+        return ErrorCodes.FORBIDDEN;
       case HttpStatus.NOT_FOUND:
-        return 'NOT_FOUND';
+        return ErrorCodes.NOT_FOUND;
       case HttpStatus.CONFLICT:
-        return 'CONFLICT';
+        return ErrorCodes.CONFLICT;
       default:
-        return 'INTERNAL';
+        return ErrorCodes.INTERNAL;
     }
   }
 }

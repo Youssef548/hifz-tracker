@@ -130,6 +130,13 @@ export interface components {
             accessToken: string;
             refreshToken: string;
         };
+        ErrorEnvelope: {
+            error: {
+                code: string;
+                message: string;
+                details?: unknown;
+            };
+        };
         LoginRequest: {
             /** Format: email */
             email: string;
@@ -225,6 +232,22 @@ export interface operations {
                     "application/json": components["schemas"]["AuthResponse_Output"];
                 };
             };
+            400: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorEnvelope"];
+                };
+            };
+            409: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorEnvelope"];
+                };
+            };
         };
     };
     AuthController_login: {
@@ -246,6 +269,22 @@ export interface operations {
                 };
                 content: {
                     "application/json": components["schemas"]["AuthResponse_Output"];
+                };
+            };
+            400: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorEnvelope"];
+                };
+            };
+            401: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorEnvelope"];
                 };
             };
         };
@@ -271,6 +310,22 @@ export interface operations {
                     "application/json": components["schemas"]["AuthResponse_Output"];
                 };
             };
+            400: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorEnvelope"];
+                };
+            };
+            401: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorEnvelope"];
+                };
+            };
         };
     };
     AuthController_me: {
@@ -288,6 +343,14 @@ export interface operations {
                 };
                 content: {
                     "application/json": components["schemas"]["AuthUser_Output"];
+                };
+            };
+            401: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorEnvelope"];
                 };
             };
         };
@@ -309,6 +372,30 @@ export interface operations {
                 };
                 content: {
                     "application/json": components["schemas"]["ReviewListResponse_Output"];
+                };
+            };
+            400: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorEnvelope"];
+                };
+            };
+            401: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorEnvelope"];
+                };
+            };
+            403: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorEnvelope"];
                 };
             };
         };
@@ -341,6 +428,30 @@ export interface operations {
                 };
                 content: {
                     "application/json": components["schemas"]["ReviewDto_Output"];
+                };
+            };
+            400: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorEnvelope"];
+                };
+            };
+            401: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorEnvelope"];
+                };
+            };
+            403: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorEnvelope"];
                 };
             };
         };

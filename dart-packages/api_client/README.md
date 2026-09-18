@@ -79,6 +79,8 @@ Class | Method | HTTP request | Description
  - [AuthResponseOutput](doc/AuthResponseOutput.md)
  - [AuthUserOutput](doc/AuthUserOutput.md)
  - [CreateReviewRequest](doc/CreateReviewRequest.md)
+ - [ErrorEnvelope](doc/ErrorEnvelope.md)
+ - [ErrorEnvelopeError](doc/ErrorEnvelopeError.md)
  - [LoginRequest](doc/LoginRequest.md)
  - [RefreshRequest](doc/RefreshRequest.md)
  - [RegisterRequest](doc/RegisterRequest.md)

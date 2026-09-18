@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { createApiClient } from '@hifz/api-sdk';
-import { LoginRequestSchema, RefreshRequestSchema } from '@hifz/contracts';
+import { ErrorCodes, LoginRequestSchema, RefreshRequestSchema } from '@hifz/contracts';
 
 const API_URL = process.env.API_URL ?? 'http://localhost:3001/api/v1';
 const ACCESS_TTL = Number(process.env.JWT_ACCESS_TTL ?? 900);
@@ -30,7 +30,7 @@ export async function POST(req: Request) {
   const parsed = LoginRequestSchema.safeParse(await req.json().catch(() => null));
   if (!parsed.success) {
     return NextResponse.json(
-      { error: { code: 'VALIDATION_ERROR', message: 'Invalid payload' } },
+      { error: { code: ErrorCodes.VALIDATION_ERROR, message: 'Invalid payload' } },
       { status: 400 },
     );
   }
@@ -39,7 +39,7 @@ export async function POST(req: Request) {
     return applySession(new NextResponse(null, { status: 204 }), auth);
   } catch {
     return NextResponse.json(
-      { error: { code: 'INVALID_CREDENTIALS', message: 'Invalid email or password' } },
+      { error: { code: ErrorCodes.INVALID_CREDENTIALS, message: 'Invalid email or password' } },
       { status: 401 },
     );
   }
@@ -55,7 +55,7 @@ export async function PUT(req: Request) {
   const parsed = RefreshRequestSchema.safeParse({ refreshToken: rt });
   if (!parsed.success) {
     return NextResponse.json(
-      { error: { code: 'UNAUTHORIZED', message: 'No refresh token' } },
+      { error: { code: ErrorCodes.UNAUTHORIZED, message: 'No refresh token' } },
       { status: 401 },
     );
   }
@@ -64,7 +64,7 @@ export async function PUT(req: Request) {
     return applySession(new NextResponse(null, { status: 204 }), auth);
   } catch {
     return NextResponse.json(
-      { error: { code: 'UNAUTHORIZED', message: 'Invalid refresh token' } },
+      { error: { code: ErrorCodes.UNAUTHORIZED, message: 'Invalid refresh token' } },
       { status: 401 },
     );
   }

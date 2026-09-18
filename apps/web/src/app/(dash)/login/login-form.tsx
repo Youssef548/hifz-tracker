@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { ApiError, createApiClient } from '@hifz/api-sdk';
-import { LoginRequestSchema, type LoginRequest } from '@hifz/contracts';
+import { ErrorCodes, LoginRequestSchema, type LoginRequest } from '@hifz/contracts';
 import { Button } from '@hifz/ui';
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL ?? 'http://localhost:3001/api/v1';
@@ -33,7 +33,7 @@ export function LoginForm() {
       router.push(next ?? '/dashboard');
     } catch (error) {
       setBanner(
-        error instanceof ApiError && error.code === 'INVALID_CREDENTIALS'
+        error instanceof ApiError && error.code === ErrorCodes.INVALID_CREDENTIALS
           ? 'Invalid email or password'
           : 'Sign in failed. Please try again.',
       );

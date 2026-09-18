@@ -12,7 +12,7 @@ import {
   Res,
   UseGuards,
 } from '@nestjs/common';
-import { ApiOkResponse, ApiQuery } from '@nestjs/swagger';
+import { ApiOkResponse, ApiQuery, ApiResponse } from '@nestjs/swagger';
 import { createZodDto, ZodResponse } from 'nestjs-zod';
 import type { Response } from 'express';
 import {
@@ -24,6 +24,7 @@ import {
 import { JwtAuthGuard } from '../auth/jwt.strategy';
 import { Roles } from '../auth/roles.decorator';
 import { RolesGuard } from '../auth/roles.guard';
+import { ErrorEnvelopeDto } from '../../filters/error-envelope.dto';
 import { ReviewsService } from './reviews.service';
 
 class CreateReviewDto extends createZodDto(CreateReviewRequestSchema) {}
@@ -39,6 +40,9 @@ export class ReviewsController {
   @Roles('STUDENT')
   @ZodResponse({ status: HttpStatus.CREATED, type: ReviewDtoClass })
   @ApiOkResponse({ type: ReviewDtoClass, description: 'Idempotent replay of an existing review' })
+  @ApiResponse({ status: HttpStatus.BAD_REQUEST, type: ErrorEnvelopeDto })
+  @ApiResponse({ status: HttpStatus.UNAUTHORIZED, type: ErrorEnvelopeDto })
+  @ApiResponse({ status: HttpStatus.FORBIDDEN, type: ErrorEnvelopeDto })
   async create(
     @Request() req: { user: { id: string; role: string } },
     @Headers(IDEMPOTENCY_KEY_HEADER) idempotencyKey: string | undefined,
@@ -59,6 +63,9 @@ export class ReviewsController {
   // this the document claims `studentId` is required.
   @ApiQuery({ name: 'studentId', required: false, type: String })
   @ZodResponse({ status: HttpStatus.OK, type: ReviewListResponseDto })
+  @ApiResponse({ status: HttpStatus.BAD_REQUEST, type: ErrorEnvelopeDto })
+  @ApiResponse({ status: HttpStatus.UNAUTHORIZED, type: ErrorEnvelopeDto })
+  @ApiResponse({ status: HttpStatus.FORBIDDEN, type: ErrorEnvelopeDto })
   list(
     @Request() req: { user: { id: string; role: string } },
     @Query('studentId') studentId?: string,
