@@ -96,10 +96,11 @@ flowchart LR
   APPS --> WEB["web/<br/>Next.js 15.5 + React 19"]
   APPS --> MOBILE["mobile/<br/>Flutter shell"]
 
-  API --> APISRC["src/modules · config · filters<br/>prisma · spec.ts<br/>prisma/ · test/"]
+  API --> APISRC["src/modules · config · filters<br/>prisma · spec.ts<br/>test/"]
   WEB --> WEBSRC["src/app/(marketing) · (dash)<br/>src/app/api/auth<br/>src/lib/session.ts<br/>middleware · manifest · sw"]
   MOBILE --> MOBILESRC["lib/main.dart · app_router.dart<br/>lib/src/providers.dart<br/>lib/l10n/"]
 
+  PKGS --> DBB["database/ — schema + migrations + client"]
   PKGS --> CONTRACTS["contracts/ — source of truth"]
   PKGS --> SDKB["api-sdk/"]
   PKGS --> UIB["ui/"]

@@ -1,0 +1,13 @@
+model ReviewLog {
+  id             String   @id @default(uuid())
+  studentId      String
+  student        User     @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  surahNumber    Int
+  ayahFrom       Int
+  ayahTo         Int
+  quality        Quality
+  loggedAt       DateTime @default(now())
+  idempotencyKey String   @unique
+
+  @@index([studentId, loggedAt(sort: Desc)])
+}

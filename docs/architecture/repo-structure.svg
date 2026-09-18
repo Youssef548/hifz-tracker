@@ -5,76 +5,76 @@
   </defs>
   <rect width="1590" height="2295" fill="#FBF8F2" />
 <line x1="70" y1="146" x2="1520" y2="146" stroke="#DED7C9" stroke-width="2" stroke-linecap="round" />
-<path d="M 410 1475 L 432 1475 L 432 750 L 440 750" fill="none" stroke="#8A4B2A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 780 750 L 802 750 L 802 402 L 810 402" fill="none" stroke="#2F4B7C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 1150 402 L 1172 402 L 1172 228 L 1180 228" fill="none" stroke="#2F4B7C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 1150 402 L 1172 402 L 1172 286 L 1180 286" fill="none" stroke="#2F4B7C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 1150 402 L 1172 402 L 1172 344 L 1180 344" fill="none" stroke="#2F4B7C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 1150 402 L 1180 402" fill="none" stroke="#2F4B7C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 1150 402 L 1172 402 L 1172 460 L 1180 460" fill="none" stroke="#2F4B7C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 1150 402 L 1172 402 L 1172 518 L 1180 518" fill="none" stroke="#2F4B7C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 1150 402 L 1172 402 L 1172 576 L 1180 576" fill="none" stroke="#2F4B7C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 780 750 L 802 750 L 802 779 L 810 779" fill="none" stroke="#A9660A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 1150 779 L 1172 779 L 1172 634 L 1180 634" fill="none" stroke="#A9660A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 1150 779 L 1172 779 L 1172 692 L 1180 692" fill="none" stroke="#A9660A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 1150 779 L 1172 779 L 1172 750 L 1180 750" fill="none" stroke="#A9660A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 1150 779 L 1172 779 L 1172 808 L 1180 808" fill="none" stroke="#A9660A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 1150 779 L 1172 779 L 1172 866 L 1180 866" fill="none" stroke="#A9660A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 1150 779 L 1172 779 L 1172 924 L 1180 924" fill="none" stroke="#A9660A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 780 750 L 802 750 L 802 1098 L 810 1098" fill="none" stroke="#0F6E5C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 1150 1098 L 1172 1098 L 1172 982 L 1180 982" fill="none" stroke="#0F6E5C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 1150 1098 L 1172 1098 L 1172 1040 L 1180 1040" fill="none" stroke="#0F6E5C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 1150 1098 L 1180 1098" fill="none" stroke="#0F6E5C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 1150 1098 L 1172 1098 L 1172 1156 L 1180 1156" fill="none" stroke="#0F6E5C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 1150 1098 L 1172 1098 L 1172 1214 L 1180 1214" fill="none" stroke="#0F6E5C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 410 1475 L 432 1475 L 432 1446 L 440 1446" fill="none" stroke="#A9660A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 780 1446 L 802 1446 L 802 1272 L 810 1272" fill="none" stroke="#A9660A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 780 1446 L 802 1446 L 802 1388 L 810 1388" fill="none" stroke="#A9660A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 410 1453.25 L 432 1453.25 L 432 706.5 L 440 706.5" fill="none" stroke="#8A4B2A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 780 706.5 L 802 706.5 L 802 373 L 810 373" fill="none" stroke="#2F4B7C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 1150 373 L 1172 373 L 1172 228 L 1180 228" fill="none" stroke="#2F4B7C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 1150 373 L 1172 373 L 1172 286 L 1180 286" fill="none" stroke="#2F4B7C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 1150 373 L 1172 373 L 1172 344 L 1180 344" fill="none" stroke="#2F4B7C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 1150 373 L 1172 373 L 1172 402 L 1180 402" fill="none" stroke="#2F4B7C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 1150 373 L 1172 373 L 1172 460 L 1180 460" fill="none" stroke="#2F4B7C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 1150 373 L 1172 373 L 1172 518 L 1180 518" fill="none" stroke="#2F4B7C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 780 706.5 L 802 706.5 L 802 721 L 810 721" fill="none" stroke="#A9660A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 1150 721 L 1172 721 L 1172 576 L 1180 576" fill="none" stroke="#A9660A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 1150 721 L 1172 721 L 1172 634 L 1180 634" fill="none" stroke="#A9660A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 1150 721 L 1172 721 L 1172 692 L 1180 692" fill="none" stroke="#A9660A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 1150 721 L 1172 721 L 1172 750 L 1180 750" fill="none" stroke="#A9660A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 1150 721 L 1172 721 L 1172 808 L 1180 808" fill="none" stroke="#A9660A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 1150 721 L 1172 721 L 1172 866 L 1180 866" fill="none" stroke="#A9660A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 780 706.5 L 802 706.5 L 802 1040 L 810 1040" fill="none" stroke="#0F6E5C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 1150 1040 L 1172 1040 L 1172 924 L 1180 924" fill="none" stroke="#0F6E5C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 1150 1040 L 1172 1040 L 1172 982 L 1180 982" fill="none" stroke="#0F6E5C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 1150 1040 L 1180 1040" fill="none" stroke="#0F6E5C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 1150 1040 L 1172 1040 L 1172 1098 L 1180 1098" fill="none" stroke="#0F6E5C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 1150 1040 L 1172 1040 L 1172 1156 L 1180 1156" fill="none" stroke="#0F6E5C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 410 1453.25 L 432 1453.25 L 432 1417 L 440 1417" fill="none" stroke="#A9660A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 780 1417 L 802 1417 L 802 1214 L 810 1214" fill="none" stroke="#A9660A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 780 1417 L 802 1417 L 802 1272 L 810 1272" fill="none" stroke="#A9660A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 780 1417 L 802 1417 L 802 1388 L 810 1388" fill="none" stroke="#A9660A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M 1150 1388 L 1172 1388 L 1172 1330 L 1180 1330" fill="none" stroke="#A9660A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M 1150 1388 L 1180 1388" fill="none" stroke="#A9660A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M 1150 1388 L 1172 1388 L 1172 1446 L 1180 1446" fill="none" stroke="#A9660A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 780 1446 L 802 1446 L 802 1504 L 810 1504" fill="none" stroke="#A9660A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 780 1446 L 802 1446 L 802 1562 L 810 1562" fill="none" stroke="#A9660A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 780 1446 L 802 1446 L 802 1620 L 810 1620" fill="none" stroke="#A9660A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 410 1475 L 432 1475 L 432 1765 L 440 1765" fill="none" stroke="#0F6E5C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 780 1417 L 802 1417 L 802 1504 L 810 1504" fill="none" stroke="#A9660A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 780 1417 L 802 1417 L 802 1562 L 810 1562" fill="none" stroke="#A9660A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 780 1417 L 802 1417 L 802 1620 L 810 1620" fill="none" stroke="#A9660A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 410 1453.25 L 432 1453.25 L 432 1765 L 440 1765" fill="none" stroke="#0F6E5C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M 780 1765 L 802 1765 L 802 1678 L 810 1678" fill="none" stroke="#0F6E5C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M 780 1765 L 802 1765 L 802 1736 L 810 1736" fill="none" stroke="#0F6E5C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M 780 1765 L 802 1765 L 802 1794 L 810 1794" fill="none" stroke="#0F6E5C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M 780 1765 L 802 1765 L 802 1852 L 810 1852" fill="none" stroke="#0F6E5C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 410 1475 L 432 1475 L 432 1910 L 440 1910" fill="none" stroke="#55606B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 410 1475 L 432 1475 L 432 1968 L 440 1968" fill="none" stroke="#55606B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 410 1475 L 432 1475 L 432 2026 L 440 2026" fill="none" stroke="#55606B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 410 1475 L 432 1475 L 432 2084 L 440 2084" fill="none" stroke="#55606B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 410 1475 L 432 1475 L 432 2142 L 440 2142" fill="none" stroke="#55606B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-<path d="M 410 1475 L 432 1475 L 432 2200 L 440 2200" fill="none" stroke="#55606B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 410 1453.25 L 432 1453.25 L 432 1910 L 440 1910" fill="none" stroke="#55606B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 410 1453.25 L 432 1453.25 L 432 1968 L 440 1968" fill="none" stroke="#55606B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 410 1453.25 L 432 1453.25 L 432 2026 L 440 2026" fill="none" stroke="#55606B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 410 1453.25 L 432 1453.25 L 432 2084 L 440 2084" fill="none" stroke="#55606B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 410 1453.25 L 432 1453.25 L 432 2142 L 440 2142" fill="none" stroke="#55606B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 410 1453.25 L 432 1453.25 L 432 2200 L 440 2200" fill="none" stroke="#55606B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 <rect x="72" y="162" width="14" height="14" rx="4" fill="#F7E9E0" stroke="#8A4B2A" stroke-width="1.5" />
 <rect x="154.4" y="162" width="14" height="14" rx="4" fill="#FBF0DC" stroke="#A9660A" stroke-width="1.5" />
 <rect x="335.79999999999995" y="162" width="14" height="14" rx="4" fill="#E4F2EE" stroke="#0F6E5C" stroke-width="1.5" />
 <rect x="477.59999999999997" y="162" width="14" height="14" rx="4" fill="#EEF0F2" stroke="#55606B" stroke-width="1.5" />
-<rect x="70" y="1452" width="340" height="46" rx="10" fill="#F7E9E0" stroke="#8A4B2A" stroke-width="2" />
-<rect x="440" y="727" width="340" height="46" rx="10" fill="#F7E9E0" stroke="#8A4B2A" stroke-width="2" />
-<rect x="810" y="379" width="340" height="46" rx="10" fill="#E6ECF7" stroke="#2F4B7C" stroke-width="2" />
+<rect x="70" y="1430.25" width="340" height="46" rx="10" fill="#F7E9E0" stroke="#8A4B2A" stroke-width="2" />
+<rect x="440" y="683.5" width="340" height="46" rx="10" fill="#F7E9E0" stroke="#8A4B2A" stroke-width="2" />
+<rect x="810" y="350" width="340" height="46" rx="10" fill="#E6ECF7" stroke="#2F4B7C" stroke-width="2" />
 <rect x="1180" y="205" width="340" height="46" rx="10" fill="#E6ECF7" stroke="#2F4B7C" stroke-width="1.25" />
 <rect x="1180" y="263" width="340" height="46" rx="10" fill="#E6ECF7" stroke="#2F4B7C" stroke-width="1.25" />
 <rect x="1180" y="321" width="340" height="46" rx="10" fill="#E6ECF7" stroke="#2F4B7C" stroke-width="1.25" />
 <rect x="1180" y="379" width="340" height="46" rx="10" fill="#E6ECF7" stroke="#2F4B7C" stroke-width="1.25" />
 <rect x="1180" y="437" width="340" height="46" rx="10" fill="#E6ECF7" stroke="#2F4B7C" stroke-width="1.25" />
 <rect x="1180" y="495" width="340" height="46" rx="10" fill="#E6ECF7" stroke="#2F4B7C" stroke-width="1.25" />
-<rect x="1180" y="553" width="340" height="46" rx="10" fill="#E6ECF7" stroke="#2F4B7C" stroke-width="1.25" />
-<rect x="810" y="756" width="340" height="46" rx="10" fill="#FBF0DC" stroke="#A9660A" stroke-width="2" />
+<rect x="810" y="698" width="340" height="46" rx="10" fill="#FBF0DC" stroke="#A9660A" stroke-width="2" />
+<rect x="1180" y="553" width="340" height="46" rx="10" fill="#FBF0DC" stroke="#A9660A" stroke-width="1.25" />
 <rect x="1180" y="611" width="340" height="46" rx="10" fill="#FBF0DC" stroke="#A9660A" stroke-width="1.25" />
 <rect x="1180" y="669" width="340" height="46" rx="10" fill="#FBF0DC" stroke="#A9660A" stroke-width="1.25" />
 <rect x="1180" y="727" width="340" height="46" rx="10" fill="#FBF0DC" stroke="#A9660A" stroke-width="1.25" />
 <rect x="1180" y="785" width="340" height="46" rx="10" fill="#FBF0DC" stroke="#A9660A" stroke-width="1.25" />
 <rect x="1180" y="843" width="340" height="46" rx="10" fill="#FBF0DC" stroke="#A9660A" stroke-width="1.25" />
-<rect x="1180" y="901" width="340" height="46" rx="10" fill="#FBF0DC" stroke="#A9660A" stroke-width="1.25" />
-<rect x="810" y="1075" width="340" height="46" rx="10" fill="#E4F2EE" stroke="#0F6E5C" stroke-width="2" />
+<rect x="810" y="1017" width="340" height="46" rx="10" fill="#E4F2EE" stroke="#0F6E5C" stroke-width="2" />
+<rect x="1180" y="901" width="340" height="46" rx="10" fill="#E4F2EE" stroke="#0F6E5C" stroke-width="1.25" />
 <rect x="1180" y="959" width="340" height="46" rx="10" fill="#E4F2EE" stroke="#0F6E5C" stroke-width="1.25" />
 <rect x="1180" y="1017" width="340" height="46" rx="10" fill="#E4F2EE" stroke="#0F6E5C" stroke-width="1.25" />
 <rect x="1180" y="1075" width="340" height="46" rx="10" fill="#E4F2EE" stroke="#0F6E5C" stroke-width="1.25" />
 <rect x="1180" y="1133" width="340" height="46" rx="10" fill="#E4F2EE" stroke="#0F6E5C" stroke-width="1.25" />
-<rect x="1180" y="1191" width="340" height="46" rx="10" fill="#E4F2EE" stroke="#0F6E5C" stroke-width="1.25" />
-<rect x="440" y="1423" width="340" height="46" rx="10" fill="#FBF0DC" stroke="#A9660A" stroke-width="2" />
+<rect x="440" y="1394" width="340" height="46" rx="10" fill="#FBF0DC" stroke="#A9660A" stroke-width="2" />
+<rect x="810" y="1191" width="340" height="46" rx="10" fill="#FBF0DC" stroke="#A9660A" stroke-width="1.25" />
 <rect x="810" y="1249" width="340" height="46" rx="10" fill="#FBF0DC" stroke="#A9660A" stroke-width="1.25" />
 <rect x="810" y="1365" width="340" height="46" rx="10" fill="#FBF0DC" stroke="#A9660A" stroke-width="2" />
 <rect x="1180" y="1307" width="340" height="46" rx="10" fill="#FBF0DC" stroke="#A9660A" stroke-width="1.25" />
@@ -100,12 +100,12 @@
 <text x="176.4" y="173.2" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#5F6A75">TypeScript packages</text>
 <text x="357.79999999999995" y="173.2" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#5F6A75">Dart packages</text>
 <text x="499.59999999999997" y="173.2" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#5F6A75">tooling &amp; infra</text>
-<text x="86" y="1470.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#63351D">hifz-tracker/</text>
-<text x="86" y="1488.85" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#5F6A75">monorepo root · pnpm workspace + Melos</text>
-<text x="456" y="745.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#63351D">apps/</text>
-<text x="456" y="763.85" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#5F6A75">runnable applications</text>
-<text x="826" y="397.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#20344F">api/</text>
-<text x="826" y="415.85" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#5F6A75">NestJS 11 + Prisma 6 · REST :3001</text>
+<text x="86" y="1449.15" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#63351D">hifz-tracker/</text>
+<text x="86" y="1467.1" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#5F6A75">monorepo root · pnpm workspace + Melos</text>
+<text x="456" y="702.4" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#63351D">apps/</text>
+<text x="456" y="720.35" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#5F6A75">runnable applications</text>
+<text x="826" y="368.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#20344F">api/</text>
+<text x="826" y="386.85" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#5F6A75">NestJS 11 + Prisma 6 · REST :3001</text>
 <text x="1196" y="223.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#20344F">src/modules/</text>
 <text x="1196" y="241.85" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#5F6A75">auth · reviews · health</text>
 <text x="1196" y="281.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#20344F">src/config/</text>
@@ -116,38 +116,38 @@
 <text x="1196" y="415.85" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#5F6A75">PrismaModule + PrismaService</text>
 <text x="1196" y="455.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#20344F">src/spec.ts</text>
 <text x="1196" y="473.85" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#5F6A75">builds the OpenAPI document</text>
-<text x="1196" y="513.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#20344F">prisma/</text>
-<text x="1196" y="531.85" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#5F6A75">schema.prisma + migrations/</text>
-<text x="1196" y="571.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#20344F">test/</text>
-<text x="1196" y="589.85" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#5F6A75">supertest e2e suite</text>
-<text x="826" y="774.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#7A4907">web/</text>
-<text x="826" y="792.85" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#5F6A75">Next.js 15.5 + React 19 · :3000</text>
-<text x="1196" y="629.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#7A4907">src/app/(marketing)/</text>
-<text x="1196" y="647.85" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#5F6A75">public landing page</text>
-<text x="1196" y="687.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#7A4907">src/app/(dash)/</text>
-<text x="1196" y="705.85" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#5F6A75">login + dashboard routes</text>
-<text x="1196" y="745.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#7A4907">src/app/api/auth/</text>
-<text x="1196" y="763.85" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#5F6A75">route handlers, session cookie</text>
-<text x="1196" y="803.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#7A4907">src/lib/session.ts</text>
-<text x="1196" y="821.85" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#5F6A75">server-side session helpers</text>
-<text x="1196" y="861.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#7A4907">src/middleware.ts</text>
-<text x="1196" y="879.85" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#5F6A75">route protection</text>
-<text x="1196" y="919.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#7A4907">src/manifest.ts + sw.ts</text>
-<text x="1196" y="937.85" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#5F6A75">installable PWA + service worker</text>
-<text x="826" y="1093.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#0A4F42">mobile/</text>
-<text x="826" y="1111.85" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#5F6A75">Flutter · Arabic-first, RTL</text>
-<text x="1196" y="977.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#0A4F42">lib/main.dart</text>
-<text x="1196" y="995.85" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#5F6A75">entry point</text>
-<text x="1196" y="1035.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#0A4F42">lib/app_router.dart</text>
-<text x="1196" y="1053.85" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#5F6A75">go_router route table</text>
-<text x="1196" y="1093.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#0A4F42">lib/src/providers.dart</text>
-<text x="1196" y="1111.85" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#5F6A75">Riverpod DI wiring</text>
-<text x="1196" y="1151.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#0A4F42">lib/src/connectivity_adapter.dart</text>
-<text x="1196" y="1169.85" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#5F6A75">connectivity_plus adapter</text>
-<text x="1196" y="1209.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#0A4F42">lib/l10n/</text>
-<text x="1196" y="1227.85" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#5F6A75">Arabic (ar) first, RTL</text>
-<text x="456" y="1441.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#7A4907">packages/</text>
-<text x="456" y="1459.85" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#5F6A75">TypeScript · pnpm workspace</text>
+<text x="1196" y="513.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#20344F">test/</text>
+<text x="1196" y="531.85" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#5F6A75">supertest e2e suite</text>
+<text x="826" y="716.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#7A4907">web/</text>
+<text x="826" y="734.85" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#5F6A75">Next.js 15.5 + React 19 · :3000</text>
+<text x="1196" y="571.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#7A4907">src/app/(marketing)/</text>
+<text x="1196" y="589.85" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#5F6A75">public landing page</text>
+<text x="1196" y="629.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#7A4907">src/app/(dash)/</text>
+<text x="1196" y="647.85" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#5F6A75">login + dashboard routes</text>
+<text x="1196" y="687.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#7A4907">src/app/api/auth/</text>
+<text x="1196" y="705.85" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#5F6A75">route handlers, session cookie</text>
+<text x="1196" y="745.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#7A4907">src/lib/session.ts</text>
+<text x="1196" y="763.85" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#5F6A75">server-side session helpers</text>
+<text x="1196" y="803.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#7A4907">src/middleware.ts</text>
+<text x="1196" y="821.85" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#5F6A75">route protection</text>
+<text x="1196" y="861.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#7A4907">src/manifest.ts + sw.ts</text>
+<text x="1196" y="879.85" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#5F6A75">installable PWA + service worker</text>
+<text x="826" y="1035.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#0A4F42">mobile/</text>
+<text x="826" y="1053.85" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#5F6A75">Flutter · Arabic-first, RTL</text>
+<text x="1196" y="919.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#0A4F42">lib/main.dart</text>
+<text x="1196" y="937.85" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#5F6A75">entry point</text>
+<text x="1196" y="977.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#0A4F42">lib/app_router.dart</text>
+<text x="1196" y="995.85" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#5F6A75">go_router route table</text>
+<text x="1196" y="1035.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#0A4F42">lib/src/providers.dart</text>
+<text x="1196" y="1053.85" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#5F6A75">Riverpod DI wiring</text>
+<text x="1196" y="1093.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#0A4F42">lib/src/connectivity_adapter.dart</text>
+<text x="1196" y="1111.85" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#5F6A75">connectivity_plus adapter</text>
+<text x="1196" y="1151.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#0A4F42">lib/l10n/</text>
+<text x="1196" y="1169.85" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#5F6A75">Arabic (ar) first, RTL</text>
+<text x="456" y="1412.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#7A4907">packages/</text>
+<text x="456" y="1430.85" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#5F6A75">TypeScript · pnpm workspace</text>
+<text x="826" y="1209.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#7A4907">database/</text>
+<text x="826" y="1227.85" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#5F6A75">Prisma schema + migrations + client</text>
 <text x="826" y="1267.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#7A4907">contracts/</text>
 <text x="826" y="1285.85" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="400" fill="#5F6A75">zod DTOs + Quran metadata</text>
 <text x="826" y="1383.9" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#7A4907">api-sdk/</text>

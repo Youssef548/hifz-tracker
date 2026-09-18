@@ -11,10 +11,11 @@ One API, one web app, one Flutter app, sharing as much code as possible while ke
 ```
 hifz-tracker/
 ├── apps/
-│   ├── api/            # NestJS + Prisma — single backend for all clients
+│   ├── api/            # NestJS — single backend for all clients
 │   ├── web/            # Next.js — marketing landing + teacher dashboard (installable PWA)
 │   └── mobile/         # Flutter — thin shell: routing, DI wiring, composition only
 ├── packages/           # TypeScript (pnpm workspace)
+│   ├── database/       # Prisma schema + migrations + generated client. Framework-agnostic.
 │   ├── contracts/      # zod schemas + inferred types + Quran metadata. The source of truth.
 │   ├── api-sdk/        # Typed fetch client for web (generated OpenAPI types, auth, error envelope)
 │   ├── ui/             # Design system: Tailwind + design tokens
@@ -54,13 +55,14 @@ docker compose up -d                     # Postgres 16 on :5432
 corepack enable && pnpm install
 cp apps/api/.env.example apps/api/.env   # JWT_ACCESS_SECRET must be >= 32 chars
 cp apps/web/.env.example apps/web/.env
-pnpm --filter api exec prisma migrate deploy
+cp packages/database/.env.example packages/database/.env   # DATABASE_URL must match the API's
+pnpm --filter @hifz/database db:deploy
 pnpm dev                                 # api on :3001, web on :3000
 ```
 
 Then check <http://localhost:3001/api/v1/health> → `{"status":"ok"}` and <http://localhost:3000>.
 
-For schema changes during development use `pnpm --filter api db:migrate` (creates a migration) rather than `db:deploy`.
+For schema changes during development use `pnpm --filter @hifz/database db:migrate` (creates a migration) rather than `db:deploy`. The schema lives in `packages/database/prisma/schema/` as one file per model.
 
 The `.env` files are gitignored, so a fresh `git worktree` needs its own `cp` steps before `api#test` will run — without them it fails with `JwtStrategy requires a secret or key`, which reads like a code bug but is pure setup.
 
