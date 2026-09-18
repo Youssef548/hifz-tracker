@@ -8,7 +8,8 @@
     "lint": "turbo run lint",
     "test": "turbo run test",
     "typecheck": "turbo run typecheck",
-    "gen:dart": "./scripts/gen-dart.sh"
+    "gen:dart": "./scripts/gen-dart.sh",
+    "gen:quran": "node scripts/gen-quran-dart.mjs"
   },
   "devDependencies": {
     "turbo": "^2.3.0"
