@@ -36,14 +36,18 @@ final databaseProvider = Provider<AppDatabase>((ref) {
 
 /// Auth requests must not run through the refreshing interceptor, otherwise a
 /// failed refresh would recurse.
+///
+/// The generated client's paths already carry the `/api/v1` prefix, so Dio is
+/// given the origin. Handing it `AppEnv.apiV1` here would request
+/// `/api/v1/api/v1/...`.
 final authApiServiceProviderOverride = Provider<AuthApiService>(
   (ref) => AuthApiService(
-    HifzApiClient(dio: Dio(BaseOptions(baseUrl: ref.watch(appEnvProvider).apiV1))),
+    HifzApiClient(dio: Dio(BaseOptions(baseUrl: ref.watch(appEnvProvider).apiBaseUrl))),
   ),
 );
 
 final authedDioProvider = Provider<Dio>((ref) {
-  final dio = Dio(BaseOptions(baseUrl: ref.watch(appEnvProvider).apiV1));
+  final dio = Dio(BaseOptions(baseUrl: ref.watch(appEnvProvider).apiBaseUrl));
   attachAuthInterceptors(
     dio,
     storage: ref.watch(tokenStorageProvider),
