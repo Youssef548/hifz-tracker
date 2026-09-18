@@ -16,7 +16,7 @@ hifz-tracker/
 │   └── mobile/         # Flutter — thin shell: routing, DI wiring, composition only
 ├── packages/           # TypeScript (pnpm workspace)
 │   ├── contracts/      # zod schemas + inferred types + Quran metadata. The source of truth.
-│   ├── api-sdk/        # Typed fetch client for web (base URL, auth, error envelope)
+│   ├── api-sdk/        # Typed fetch client for web (generated OpenAPI types, auth, error envelope)
 │   ├── ui/             # Design system: Tailwind + design tokens
 │   └── config/         # Shared tsconfig / eslint presets (boundaries enforcement)
 ├── dart-packages/      # Dart (Melos-managed)
@@ -27,7 +27,11 @@ hifz-tracker/
 └── docker-compose.yml  # Postgres 16 (+ Redis 7, not yet used)
 ```
 
-**How sharing works.** `packages/contracts` holds every DTO as a zod schema with inferred TypeScript types. The API validates requests with those schemas and the web app imports the *same* schemas for form validation, so there is no TypeScript codegen — one repo, one version, direct imports. Generation happens **only** across the language boundary: the API emits an OpenAPI document, and `pnpm gen:dart` turns it into `dart-packages/api_client`. CI regenerates and fails on drift, so the Dart client can never fall behind.
+**Diagrams.** [`docs/architecture/`](docs/architecture/) maps this out visually — the system
+diagram and the repository tree, as SVG, PNG, and editable Excalidraw scenes. Open
+[`docs/architecture/index.html`](docs/architecture/index.html) for both in one page.
+
+**How sharing works.** `packages/contracts` holds every DTO as a zod schema with inferred TypeScript types. The API validates requests with those schemas and the web app imports the *same* schemas for form validation — one repo, one version, direct imports. Where a hand-written declaration would otherwise duplicate the API, we generate instead: the API emits an OpenAPI document, `pnpm gen:dart` turns it into `dart-packages/api_client`, and `pnpm gen:api-types` turns it into the route types behind `packages/api-sdk`. CI regenerates both and fails on drift, so no generated client can fall behind.
 
 **Dependency rules (enforced as build errors).** `apps/*` never import each other — cross-app communication is the API. `packages/*` never import from `apps/*`. Every package exposes one public entry; deep imports are forbidden. On the TypeScript side ESLint boundaries make violations fail the build.
 
@@ -82,11 +86,12 @@ The API's `test` task runs its supertest e2e suite, which exercises auth, the er
 ## Code generation
 
 ```bash
-pnpm gen:dart     # OpenAPI spec -> dart-packages/api_client (requires Java 17)
-pnpm gen:quran    # packages/contracts/quran/surahs.json -> Dart Surah constants
+pnpm gen:dart       # OpenAPI spec -> dart-packages/api_client (requires Java 17)
+pnpm gen:api-types  # OpenAPI spec -> packages/api-sdk/src/generated (requires Postgres)
+pnpm gen:quran      # packages/contracts/quran/surahs.json -> Dart Surah constants
 ```
 
-`dart-packages/api_client` is fully generated — **do not hand-edit it**. CI regenerates both and fails if the committed artifacts differ, so run these after touching a controller, a contract schema, or `surahs.json`.
+`dart-packages/api_client` and `packages/api-sdk/src/generated/` are fully generated — **do not hand-edit them**. CI regenerates all three and fails if the committed artifacts differ, so run these after touching a controller, a contract schema, or `surahs.json`.
 
 ## Conventions
 

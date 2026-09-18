@@ -84,7 +84,7 @@ jobs:
       - run: dart pub global activate melos ${{ env.MELOS_VERSION }}
       - run: echo "$HOME/.pub-cache/bin" >> "$GITHUB_PATH"
       - run: melos bootstrap
-      - run: ./scripts/gen-dart.sh && pnpm gen:quran
+      - run: ./scripts/gen-dart.sh && pnpm gen:quran && pnpm gen:api-types
       - run: >
-          git diff --exit-code dart-packages/ ||
-          (echo "::error::generated dart files are stale — run pnpm gen:dart && pnpm gen:quran" && exit 1)
+          git diff --exit-code dart-packages/ packages/api-sdk/src/generated/ ||
+          (echo "::error::generated files are stale — run pnpm gen:dart && pnpm gen:quran && pnpm gen:api-types" && exit 1)

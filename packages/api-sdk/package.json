@@ -8,10 +8,14 @@
     "test": "vitest run",
     "typecheck": "tsc --noEmit"
   },
-  "dependencies": { "@hifz/contracts": "workspace:*" },
+  "dependencies": {
+    "@hifz/contracts": "workspace:*",
+    "openapi-fetch": "^0.17.0"
+  },
   "devDependencies": {
     "@hifz/config": "workspace:*",
     "msw": "^2.6.0",
+    "openapi-typescript": "^7.13.0",
     "typescript": "^5.7.0",
     "vitest": "^2.1.0"
   }

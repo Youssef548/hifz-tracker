@@ -9,6 +9,7 @@
     "test": "turbo run test",
     "typecheck": "turbo run typecheck",
     "gen:dart": "./scripts/gen-dart.sh",
+    "gen:api-types": "./scripts/gen-api-types.sh",
     "gen:quran": "node scripts/gen-quran-dart.mjs"
   },
   "devDependencies": {
