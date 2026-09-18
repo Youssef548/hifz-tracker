@@ -1,0 +1,5 @@
+{
+  "name": "@hifz/config",
+  "private": true,
+  "files": ["tsconfig/"]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "@hifz/eslint-config",
+  "private": true,
+  "type": "module",
+  "main": "index.js",
+  "dependencies": {
+    "eslint-plugin-boundaries": "^4.1.1",
+    "eslint-plugin-import": "^2.31.0"
+  },
+  "peerDependencies": { "eslint": "^9.0.0" }
+}
