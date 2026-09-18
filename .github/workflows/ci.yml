@@ -4,6 +4,12 @@ on:
   push: { branches: [main] }
   pull_request:
 
+env:
+  # Melos 3+ is a local install (declared in the root pubspec.yaml), but
+  # `melos exec` shells out to a `melos` binary, so it also has to be activated
+  # globally and its bin directory put on PATH.
+  MELOS_VERSION: 6.3.3
+
 jobs:
   js:
     runs-on: ubuntu-latest
@@ -17,15 +23,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with: { fetch-depth: 0 }
+      # Must precede setup-node, whose `cache: pnpm` needs pnpm on PATH.
+      - uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v4
         with: { node-version: 22, cache: pnpm }
-      - run: corepack enable
       - run: pnpm install --frozen-lockfile
       - run: pnpm --filter api exec prisma migrate deploy
-        env: { DATABASE_URL: postgresql://hifz:hifz@localhost:5432/hifz_test }
+        env: { DATABASE_URL: "postgresql://hifz:hifz@localhost:5432/hifz_test" }
       - run: pnpm turbo run lint typecheck test build --affected
         env:
-          DATABASE_URL: postgresql://hifz:hifz@localhost:5432/hifz_test
+          DATABASE_URL: "postgresql://hifz:hifz@localhost:5432/hifz_test"
           JWT_ACCESS_SECRET: ci-secret-ci-secret-ci-secret-ci-secret-32
           API_URL: http://localhost:3001/api/v1
 
@@ -36,26 +43,30 @@ jobs:
         with: { fetch-depth: 0 }
       - uses: subosito/flutter-action@v2
         with: { channel: stable, cache: true }
-      # Melos 3+ requires a local install (declared in the root pubspec.yaml),
-      # so it runs through `dart run melos` rather than a global activation.
       - run: dart pub get
-      - run: dart run melos bootstrap
-      - run: dart run melos run analyze
-      - run: dart run melos run test
+      - run: dart pub global activate melos ${{ env.MELOS_VERSION }}
+      - run: echo "$HOME/.pub-cache/bin" >> "$GITHUB_PATH"
+      - run: melos bootstrap
+      - run: melos run analyze
+      - run: melos run test
 
   drift:
     needs: [js, dart]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v4
         with: { node-version: 22, cache: pnpm }
       - uses: actions/setup-java@v4
         with: { distribution: temurin, java-version: 17 }
       - uses: subosito/flutter-action@v2
         with: { channel: stable }
-      - run: corepack enable && pnpm install --frozen-lockfile
-      - run: dart pub get && dart run melos bootstrap
+      - run: pnpm install --frozen-lockfile
+      - run: dart pub get
+      - run: dart pub global activate melos ${{ env.MELOS_VERSION }}
+      - run: echo "$HOME/.pub-cache/bin" >> "$GITHUB_PATH"
+      - run: melos bootstrap
       - run: ./scripts/gen-dart.sh && pnpm gen:quran
       - run: >
           git diff --exit-code dart-packages/ ||
