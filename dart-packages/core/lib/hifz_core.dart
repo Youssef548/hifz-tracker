@@ -3,3 +3,4 @@ export 'src/env.dart';
 export 'src/quran_data.g.dart';
 export 'src/result.dart';
 export 'src/surah_info.dart';
+export 'src/surah_lookup.dart';

@@ -11,22 +11,34 @@ dependencies:
     sdk: flutter
   flutter_localizations:
     sdk: flutter
+  connectivity_plus: ^6.0.5
   cupertino_icons: ^1.0.8
+  dio: ^5.7.0
+  drift: ^2.20.0
   flutter_riverpod: ^2.6.0
   flutter_secure_storage: ^9.2.0
   go_router: ^14.6.0
   google_fonts: ^6.2.1
+  path: ^1.9.0
+  path_provider: ^2.1.5
+  sqlite3_flutter_libs: ^0.5.24
+  hifz_api_client:
+    path: ../../dart-packages/api_client
   hifz_core:
     path: ../../dart-packages/core
   hifz_data:
     path: ../../dart-packages/data
   hifz_feature_auth:
     path: ../../dart-packages/features/auth
+  hifz_feature_hifz_logging:
+    path: ../../dart-packages/features/hifz_logging
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^6.0.0
+  mocktail: ^1.0.4
 
 flutter:
   uses-material-design: true
+  generate: true

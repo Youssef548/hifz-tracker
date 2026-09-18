@@ -1,6 +1,5 @@
 .gitignore
 README.md
-analysis_options.yaml
 doc/AuthApi.md
 doc/AuthResponseOutput.md
 doc/AuthUserOutput.md

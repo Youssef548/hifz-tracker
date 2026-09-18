@@ -1,35 +1,35 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'app_router.dart';
+import 'l10n/app_localizations.dart';
+import 'src/providers.dart';
+
 void main() {
-  runApp(const ProviderScope(child: HifzTrackerApp()));
+  runApp(
+    ProviderScope(
+      overrides: appOverrides(),
+      child: const HifzTrackerApp(),
+    ),
+  );
 }
 
-/// Arabic-first shell: `ar` is the only default locale, Material supplies RTL
-/// through [GlobalMaterialLocalizations], and Cairo is the UI font.
-class HifzTrackerApp extends StatelessWidget {
+/// Arabic-first shell: `ar` is the default locale, RTL comes from the
+/// generated localizations, and Cairo is the UI font.
+class HifzTrackerApp extends ConsumerWidget {
   const HifzTrackerApp({super.key});
 
-  static const supportedLocales = <Locale>[Locale('ar'), Locale('en')];
-
-  static const localizationsDelegates = <LocalizationsDelegate<dynamic>>[
-    GlobalMaterialLocalizations.delegate,
-    GlobalWidgetsLocalizations.delegate,
-    GlobalCupertinoLocalizations.delegate,
-  ];
-
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'متابعة الحفظ',
+  Widget build(BuildContext context, WidgetRef ref) {
+    return MaterialApp.router(
+      onGenerateTitle: (context) => AppLocalizations.of(context).appTitle,
       locale: const Locale('ar'),
-      supportedLocales: supportedLocales,
-      localizationsDelegates: localizationsDelegates,
+      supportedLocales: AppLocalizations.supportedLocales,
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
       theme: _theme(Brightness.light),
       darkTheme: _theme(Brightness.dark),
-      home: const _PlaceholderHome(),
+      routerConfig: ref.watch(routerProvider),
     );
   }
 
@@ -42,16 +42,5 @@ class HifzTrackerApp extends StatelessWidget {
       ),
     );
     return base.copyWith(textTheme: GoogleFonts.cairoTextTheme(base.textTheme));
-  }
-}
-
-class _PlaceholderHome extends StatelessWidget {
-  const _PlaceholderHome();
-
-  @override
-  Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(child: Text('متابعة الحفظ')),
-    );
   }
 }

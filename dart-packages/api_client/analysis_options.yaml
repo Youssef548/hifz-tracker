@@ -7,3 +7,6 @@ analyzer:
     - test/*.dart
   errors:
     deprecated_member_use_from_same_package: ignore
+    # The generator emits `_serializers` in API classes whose operations have no
+    # body to (de)serialize; the field is intentionally kept by the template.
+    unused_field: ignore

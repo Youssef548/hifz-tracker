@@ -1,0 +1,24 @@
+name: hifz_feature_hifz_logging
+version: 0.1.0
+publish_to: none
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^2.6.0
+  hifz_api_client:
+    path: ../../api_client
+  hifz_core:
+    path: ../../core
+  hifz_data:
+    path: ../../data
+
+dev_dependencies:
+  flutter_localizations:
+    sdk: flutter
+  flutter_test:
+    sdk: flutter
+  mocktail: ^1.0.4
