@@ -1,4 +1,4 @@
 {
   "extends": "@hifz/config/tsconfig/base.json",
-  "include": ["src", "test"]
+  "include": ["src", "test", "quran"]
 }

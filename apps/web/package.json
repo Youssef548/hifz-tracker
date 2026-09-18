@@ -13,6 +13,7 @@
   "dependencies": {
     "@hifz/api-sdk": "workspace:^",
     "@hifz/contracts": "workspace:^",
+    "@hifz/quran": "workspace:^",
     "@hifz/ui": "workspace:^",
     "@hookform/resolvers": "^5.9.1",
     "@serwist/next": "^9.5.12",

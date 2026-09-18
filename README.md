@@ -16,7 +16,8 @@ hifz-tracker/
 │   └── mobile/         # Flutter — thin shell: routing, DI wiring, composition only
 ├── packages/           # TypeScript (pnpm workspace)
 │   ├── database/       # Prisma schema + migrations + generated client. Framework-agnostic.
-│   ├── contracts/      # zod schemas + inferred types + Quran metadata. The source of truth.
+│   ├── contracts/      # zod schemas + inferred types. The API contract, the source of truth.
+│   ├── quran/          # Surah metadata (JSON) + lookups, shared by web and the Dart generator
 │   ├── api-sdk/        # Typed fetch client for web (generated OpenAPI types, auth, error envelope)
 │   ├── ui/             # Design system: Tailwind + design tokens
 │   └── config/         # Shared tsconfig / eslint presets (boundaries enforcement)
@@ -92,7 +93,7 @@ The API's `test` task runs its supertest e2e suite, which exercises auth, the er
 ```bash
 pnpm gen:dart       # OpenAPI spec -> dart-packages/api_client (requires Java 17)
 pnpm gen:api-types  # OpenAPI spec -> packages/api-sdk/src/generated (requires Postgres)
-pnpm gen:quran      # packages/contracts/quran/surahs.json -> Dart Surah constants
+pnpm gen:quran      # packages/quran/quran/surahs.json -> Dart Surah constants
 ```
 
 `dart-packages/api_client` and `packages/api-sdk/src/generated/` are fully generated — **do not hand-edit them**. CI regenerates all three and fails if the committed artifacts differ, so run these after touching a controller, a contract schema, or `surahs.json`.

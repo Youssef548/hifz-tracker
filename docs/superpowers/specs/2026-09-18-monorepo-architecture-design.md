@@ -42,7 +42,9 @@ hifz-tracker/
 │   ├── web/            # Next.js — (marketing) + (dash)/dashboard route groups
 │   └── mobile/         # Flutter app — thin shell: routing, DI wiring, composition only
 ├── packages/           # TypeScript (pnpm workspace)
-│   ├── contracts/      # zod schemas + inferred types + constants + Quran metadata JSON. Depends on nothing.
+│   ├── database/       # Prisma schema + migrations + generated client. Framework-agnostic.
+│   ├── contracts/      # zod schemas + inferred types + constants. The API contract. Depends on nothing.
+│   ├── quran/          # Surah metadata JSON + lookups. Depends on nothing.
 │   ├── api-sdk/        # Typed fetch wrapper for web (base URL, auth, error envelope)
 │   ├── ui/             # Design system: Tailwind + shadcn/ui (web only)
 │   └── config/         # Shared tsconfig / eslint / prettier presets
@@ -71,15 +73,18 @@ One schema system, three consumers; generation happens **only** across the langu
 2. **Flutter client generation.** Nest serves the OpenAPI spec at `/docs-json`;
    `pnpm gen:dart` runs `openapi-generator-cli` (dart-dio) into `dart-packages/api_client`.
    CI regenerates and fails on `git diff --exit-code` — the client can never drift from the API.
-3. **Quran metadata.** Surah list (Arabic + transliterated names), ayah counts, Juz/Hizb
-   divisions live as one JSON file in `contracts`; a small script generates the Dart constants
-   file from it. Single data source; Arabic content is served identically on every surface.
+3. **Quran metadata.** Surah list (Arabic + transliterated names) and ayah counts live as one JSON
+   file in its own `packages/quran`, with a small script generating the Dart constants file from it.
+   Single data source; Arabic content is served identically on every surface.
+   - *Why its own package:* it is shared domain data, not part of the API wire contract. It used to
+     sit in `contracts`, which meant the Dart generator reached into the contract package by path for
+     a dataset the API never touches. Splitting it keeps "contract" meaning "the wire contract".
 
 ## 5. Dependency rules (enforced, not conventional)
 
 - `apps/*` never import each other. Cross-app communication is the API, exclusively.
 - `packages/*` and `dart-packages/*` never import from `apps/*`. Dependencies point inward.
-- `contracts` depends on nothing. `api-sdk` depends only on `contracts`.
+- `contracts` depends on nothing. `quran` depends on nothing. `api-sdk` depends only on `contracts`.
 - `features/*` reach the backend only through `data` repositories.
 - Generated packages (`api_client`) are leaves: deletable and regenerable at any time.
 - Every package exposes one public entry (`index.ts` / package `exports`); deep imports are

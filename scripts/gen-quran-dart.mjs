@@ -1,7 +1,7 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 
 const surahs = JSON.parse(
-  readFileSync(new URL('../packages/contracts/quran/surahs.json', import.meta.url), 'utf8'),
+  readFileSync(new URL('../packages/quran/quran/surahs.json', import.meta.url), 'utf8'),
 );
 
 const entries = surahs

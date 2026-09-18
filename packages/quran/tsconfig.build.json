@@ -7,8 +7,9 @@
     "rootDir": ".",
     "composite": false,
     "declaration": true,
-    "declarationMap": true
+    "declarationMap": true,
+    "resolveJsonModule": true
   },
-  "include": ["src"],
+  "include": ["src", "quran"],
   "exclude": ["node_modules", "dist", "test"]
 }

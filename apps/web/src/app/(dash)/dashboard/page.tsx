@@ -1,6 +1,6 @@
 import { redirect } from 'next/navigation';
 import { ApiError, createApiClient } from '@hifz/api-sdk';
-import { surahByNumber } from '@hifz/contracts';
+import { surahByNumber } from '@hifz/quran';
 import { getSessionTokens } from '@/lib/session';
 import { StudentFilter } from './student-filter';
 

@@ -1,5 +1,5 @@
 {
-  "name": "@hifz/contracts",
+  "name": "@hifz/quran",
   "version": "0.1.0",
   "main": "./dist/src/index.js",
   "types": "./dist/src/index.d.ts",
@@ -12,10 +12,8 @@
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "test": "vitest run",
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "zod": "^4.4.3"
+    "typecheck": "tsc --noEmit",
+    "quran:data": "node scripts/fetch-quran-metadata.mjs"
   },
   "devDependencies": {
     "@hifz/config": "workspace:*",
