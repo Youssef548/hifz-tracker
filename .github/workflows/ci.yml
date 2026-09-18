@@ -20,6 +20,10 @@ jobs:
         ports: ["5432:5432"]
         options: >-
           --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
+    env:
+      DATABASE_URL: "postgresql://hifz:hifz@localhost:5432/hifz_test"
+      JWT_ACCESS_SECRET: ci-secret-ci-secret-ci-secret-ci-secret-32
+      API_URL: http://localhost:3001/api/v1
     steps:
       - uses: actions/checkout@v4
         with: { fetch-depth: 0 }
@@ -28,13 +32,9 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: 22, cache: pnpm }
       - run: pnpm install --frozen-lockfile
+      - run: pnpm --filter api exec prisma generate
       - run: pnpm --filter api exec prisma migrate deploy
-        env: { DATABASE_URL: "postgresql://hifz:hifz@localhost:5432/hifz_test" }
       - run: pnpm turbo run lint typecheck test build --affected
-        env:
-          DATABASE_URL: "postgresql://hifz:hifz@localhost:5432/hifz_test"
-          JWT_ACCESS_SECRET: ci-secret-ci-secret-ci-secret-ci-secret-32
-          API_URL: http://localhost:3001/api/v1
 
   dart:
     runs-on: ubuntu-latest
@@ -53,6 +53,19 @@ jobs:
   drift:
     needs: [js, dart]
     runs-on: ubuntu-latest
+    # Generating the spec boots the Nest app, so PrismaService.$connect() and
+    # validateEnv() both need a reachable database and a real secret — the
+    # migrations themselves are irrelevant here.
+    services:
+      postgres:
+        image: postgres:16
+        env: { POSTGRES_DB: hifz_test, POSTGRES_USER: hifz, POSTGRES_PASSWORD: hifz }
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
+    env:
+      DATABASE_URL: "postgresql://hifz:hifz@localhost:5432/hifz_test"
+      JWT_ACCESS_SECRET: ci-secret-ci-secret-ci-secret-ci-secret-32
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
@@ -63,6 +76,10 @@ jobs:
       - uses: subosito/flutter-action@v2
         with: { channel: stable }
       - run: pnpm install --frozen-lockfile
+      # The spec compiles against contracts' built types and the generated
+      # Prisma client, neither of which a bare install guarantees.
+      - run: pnpm --filter api exec prisma generate
+      - run: pnpm --filter @hifz/contracts build
       - run: dart pub get
       - run: dart pub global activate melos ${{ env.MELOS_VERSION }}
       - run: echo "$HOME/.pub-cache/bin" >> "$GITHUB_PATH"
