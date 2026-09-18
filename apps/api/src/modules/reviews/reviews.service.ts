@@ -21,7 +21,7 @@ export class ReviewsService {
         ayahFrom: body.ayahFrom,
         ayahTo: body.ayahTo,
         quality: body.quality,
-        loggedAt: body.loggedAt ?? new Date(),
+        loggedAt: body.loggedAt ? new Date(body.loggedAt) : new Date(),
       },
     });
     return { review: this.toDto(created), replayed: false };

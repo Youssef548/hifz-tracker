@@ -1,12 +1,14 @@
 import { z } from 'zod';
 
-export const ErrorEnvelopeSchema = z.object({
-  error: z.object({
-    code: z.string(),
-    message: z.string(),
-    details: z.unknown().optional(),
-  }),
-});
+export const ErrorEnvelopeSchema = z
+  .object({
+    error: z.object({
+      code: z.string(),
+      message: z.string(),
+      details: z.unknown().optional(),
+    }),
+  })
+  .meta({ id: 'ErrorEnvelope' });
 export type ErrorEnvelope = z.infer<typeof ErrorEnvelopeSchema>;
 
 export const ErrorCodes = {

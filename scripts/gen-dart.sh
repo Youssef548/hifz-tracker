@@ -7,6 +7,7 @@ npx --yes @openapitools/openapi-generator-cli generate \
   -g dart-dio \
   -o dart-packages/api_client \
   --additional-properties=pubName=hifz_api_client \
+  --global-property apiTests=false,modelTests=false \
   --skip-validate-spec
-(cd dart-packages/api_client && dart pub get && dart format . >/dev/null && dart fix --apply >/dev/null)
+(cd dart-packages/api_client && dart pub get && dart run build_runner build && dart format . >/dev/null && dart fix --apply >/dev/null)
 echo "api_client regenerated"

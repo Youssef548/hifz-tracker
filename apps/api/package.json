@@ -18,7 +18,7 @@
     "test:cov": "jest --coverage",
     "test:e2e": "jest --config ./test/jest-e2e.json --runInBand",
     "typecheck": "tsc --noEmit",
-    "spec": "tsx src/spec.ts",
+    "spec": "tsc -p tsconfig.spec.json && node dist/spec.js",
     "db:migrate": "prisma migrate dev",
     "db:deploy": "prisma migrate deploy"
   },
@@ -38,7 +38,7 @@
     "passport-jwt": "^4.0.1",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.1",
-    "zod": "^3.24.0"
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.2.0",
