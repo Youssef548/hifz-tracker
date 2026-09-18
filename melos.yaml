@@ -1,0 +1,23 @@
+name: hifz_tracker
+
+packages:
+  - apps/mobile
+  - dart-packages/**
+
+scripts:
+  analyze:
+    description: Analyze every Dart package.
+    exec: dart analyze .
+  test:
+    description: Run tests in every Dart package (dart for pure, flutter for Flutter).
+    steps:
+      - test:dart
+      - test:flutter
+  test:dart:
+    exec: dart test
+    packageFilters:
+      flutter: false
+  test:flutter:
+    exec: flutter test
+    packageFilters:
+      flutter: true

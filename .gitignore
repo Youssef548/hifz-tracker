@@ -12,3 +12,8 @@ apps/mobile/.dart_tool/
 apps/mobile/build/
 .dart_tool/
 melos_staging/
+.idea/
+*.iml
+dart-packages/**/pubspec.lock
+dart-packages/**/pubspec_overrides.yaml
+dart-packages/**/*.iml
