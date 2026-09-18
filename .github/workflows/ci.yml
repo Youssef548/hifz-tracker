@@ -34,7 +34,13 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm --filter @hifz/database db:generate
       - run: pnpm --filter @hifz/database db:deploy
-      - run: pnpm turbo run lint typecheck test build --affected
+      # On main, run everything. `--affected` runs no tasks at all for a change
+      # that touches no package (docs, workflows) and still exits 0 — a green
+      # check that tested nothing. That is how a broken api#test stayed hidden.
+      - if: github.event_name == 'pull_request'
+        run: pnpm turbo run lint typecheck test build --affected
+      - if: github.event_name != 'pull_request'
+        run: pnpm turbo run lint typecheck test build
 
   dart:
     runs-on: ubuntu-latest
@@ -76,9 +82,11 @@ jobs:
       - uses: subosito/flutter-action@v2
         with: { channel: stable }
       - run: pnpm install --frozen-lockfile
-      # The spec compiles against contracts' built types and the generated
-      # Prisma client, neither of which a bare install guarantees.
-      - run: pnpm --filter @hifz/database db:generate
+      # `spec` compiles apps/api against built workspace types, which a bare
+      # install does not guarantee: @hifz/database's dist/.d.ts (its build also
+      # runs prisma generate) and @hifz/contracts. Without the database build
+      # this step dies with TS2307 "Cannot find module '@hifz/database'".
+      - run: pnpm --filter @hifz/database build
       - run: pnpm --filter @hifz/contracts build
       - run: dart pub get
       - run: dart pub global activate melos ${{ env.MELOS_VERSION }}
