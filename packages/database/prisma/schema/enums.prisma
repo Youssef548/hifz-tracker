@@ -1,0 +1,11 @@
+enum Role {
+  STUDENT
+  TEACHER
+  ADMIN
+}
+
+enum Quality {
+  GOOD
+  FAIR
+  POOR
+}

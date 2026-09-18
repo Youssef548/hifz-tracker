@@ -32,8 +32,8 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: 22, cache: pnpm }
       - run: pnpm install --frozen-lockfile
-      - run: pnpm --filter api exec prisma generate
-      - run: pnpm --filter api exec prisma migrate deploy
+      - run: pnpm --filter @hifz/database db:generate
+      - run: pnpm --filter @hifz/database db:deploy
       - run: pnpm turbo run lint typecheck test build --affected
 
   dart:
@@ -78,7 +78,7 @@ jobs:
       - run: pnpm install --frozen-lockfile
       # The spec compiles against contracts' built types and the generated
       # Prisma client, neither of which a bare install guarantees.
-      - run: pnpm --filter api exec prisma generate
+      - run: pnpm --filter @hifz/database db:generate
       - run: pnpm --filter @hifz/contracts build
       - run: dart pub get
       - run: dart pub global activate melos ${{ env.MELOS_VERSION }}

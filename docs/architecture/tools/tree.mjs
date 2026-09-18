@@ -26,7 +26,6 @@ const tree = {
             { name: 'src/filters/', desc: 'the { error: {...} } envelope' },
             { name: 'src/prisma/', desc: 'PrismaModule + PrismaService' },
             { name: 'src/spec.ts', desc: 'builds the OpenAPI document' },
-            { name: 'prisma/', desc: 'schema.prisma + migrations/' },
             { name: 'test/', desc: 'supertest e2e suite' },
           ],
         },
@@ -53,6 +52,7 @@ const tree = {
     },
     {
       name: 'packages/', desc: 'TypeScript · pnpm workspace', a: AMBER, children: [
+        { name: 'database/', desc: 'Prisma schema + migrations + client' },
         { name: 'contracts/', desc: 'zod DTOs + Quran metadata', badge: 'SOURCE OF TRUTH' },
         {
           name: 'api-sdk/', desc: 'openapi-fetch client for the web app', children: [
