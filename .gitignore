@@ -16,6 +16,7 @@ melos_staging/
 .idea/
 *.iml
 .DS_Store
+.commandcode/
 pubspec_overrides.yaml
 dart-packages/**/pubspec.lock
 dart-packages/**/pubspec_overrides.yaml
