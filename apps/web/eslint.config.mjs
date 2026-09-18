@@ -16,7 +16,15 @@ const eslintConfig = [
     rules: { 'import/no-extraneous-dependencies': 'error' },
   },
   {
-    ignores: ['node_modules/**', '.next/**', 'out/**', 'build/**', 'next-env.d.ts'],
+    ignores: [
+      'node_modules/**',
+      '.next/**',
+      'out/**',
+      'build/**',
+      'next-env.d.ts',
+      // Serwist build output — minified, regenerated on every build.
+      'public/sw.js',
+    ],
   },
 ];
 

@@ -1,0 +1,62 @@
+name: ci
+
+on:
+  push: { branches: [main] }
+  pull_request:
+
+jobs:
+  js:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env: { POSTGRES_DB: hifz_test, POSTGRES_USER: hifz, POSTGRES_PASSWORD: hifz }
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: pnpm }
+      - run: corepack enable
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm --filter api exec prisma migrate deploy
+        env: { DATABASE_URL: postgresql://hifz:hifz@localhost:5432/hifz_test }
+      - run: pnpm turbo run lint typecheck test build --affected
+        env:
+          DATABASE_URL: postgresql://hifz:hifz@localhost:5432/hifz_test
+          JWT_ACCESS_SECRET: ci-secret-ci-secret-ci-secret-ci-secret-32
+          API_URL: http://localhost:3001/api/v1
+
+  dart:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: subosito/flutter-action@v2
+        with: { channel: stable, cache: true }
+      # Melos 3+ requires a local install (declared in the root pubspec.yaml),
+      # so it runs through `dart run melos` rather than a global activation.
+      - run: dart pub get
+      - run: dart run melos bootstrap
+      - run: dart run melos run analyze
+      - run: dart run melos run test
+
+  drift:
+    needs: [js, dart]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: pnpm }
+      - uses: actions/setup-java@v4
+        with: { distribution: temurin, java-version: 17 }
+      - uses: subosito/flutter-action@v2
+        with: { channel: stable }
+      - run: corepack enable && pnpm install --frozen-lockfile
+      - run: dart pub get && dart run melos bootstrap
+      - run: ./scripts/gen-dart.sh && pnpm gen:quran
+      - run: >
+          git diff --exit-code dart-packages/ ||
+          (echo "::error::generated dart files are stale — run pnpm gen:dart && pnpm gen:quran" && exit 1)

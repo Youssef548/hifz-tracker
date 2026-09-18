@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "test": "NODE_ENV=test vitest run",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "next typegen && tsc --noEmit"
   },
   "dependencies": {
     "@hifz/api-sdk": "workspace:^",
