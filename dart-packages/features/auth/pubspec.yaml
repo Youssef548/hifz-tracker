@@ -1,0 +1,22 @@
+name: hifz_feature_auth
+version: 0.1.0
+publish_to: none
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  dio: ^5.7.0
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^2.6.0
+  flutter_secure_storage: ^9.2.0
+  hifz_api_client:
+    path: ../../api_client
+  hifz_core:
+    path: ../../core
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  mocktail: ^1.0.4
